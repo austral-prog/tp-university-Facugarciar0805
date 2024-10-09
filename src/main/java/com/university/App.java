@@ -1,120 +1,115 @@
 package com.university;
 
 import com.university.CsvWorker.*;
-import com.university.course.Course;
-import com.university.student.Student;
+import com.university.Objetos.Creators.CourseCreator;
+import com.university.Objetos.Creators.Creatable;
+import com.university.Objetos.Creators.ExamCreator;
+import com.university.Objetos.Creators.StudentCreator;
+import com.university.Objetos.course.Course;
+import com.university.Objetos.exams.Exams;
+import com.university.Objetos.student.Student;
+import com.university.sorter.Sorter;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
-        List<String[]> data = new ArrayList<>();
+
+        //variables principales
+        List<String[]> dataStudentsExams;
+        List<String[]> dataStudentCourses;
         List<Student> studentsList = new ArrayList<>();
         List<Course> coursesList = new ArrayList<>();
+        List<Exams> examsList = new ArrayList<>();
 
 
 
 
+
+        //Creo un lector y meto la info de input.csv en la variable data
         CsvReader reader = new CsvReader();
-        data = reader.readCsv("src/main/resources/input.csv");
+        dataStudentCourses = reader.readCsv("src/main/resources/input.csv");
+        dataStudentsExams = reader.readCsv("src/main/resources/input_2.csv");
 
+
+
+
+        //Inicializo un creador de Students y un creador de cursos
         StudentCreator studentCreator = new StudentCreator();
         CourseCreator courseCreator = new CourseCreator();
+        ExamCreator examCreator = new ExamCreator();
+        Sorter sorter = new Sorter();
 
-        for(int i = 1; i < data.size(); i++){                               //for para toda la data
-            Student student = studentCreator.createObject(data.get(i));
-            Course course = courseCreator.createObject(data.get(i));
 
-            boolean found = false;
+        for(String[] linea: dataStudentCourses){
+            Student student= studentCreator.createObject(studentsList,linea);
+            Course course = courseCreator.createObject(coursesList,linea);
+            student.addCourse(course);
+            course.addStudent(student);
+        }
 
-            for (Student s : studentsList) {                       //for para los estudiantes
-                if (s.equals(student)) {
-                    boolean foundCourse = false;
-                    for (Course c : coursesList){                    //for para los cursos
-                        if(c.equals(course)){                       //caso: encontre el curso y el estudiante
-                            if(!s.containsCourse(c)){
-                                s.addCourse(c);
-                            }
-                            if(!c.containsStudent(s)){
-                                c.addStudent(s);
-                            }
+        List<String> listaStrings = new ArrayList<>();
+        for(Student s: studentsList){
+            listaStrings.add(s.toStringForSolutionCsv());
+        }
 
-                            foundCourse = true;
+        List<String> solution = sorter.sortStrings(listaStrings);
+
+
+
+        //Creo un escritor de csv y escribo el solution.csv
+//        CsvWriter writer = new CsvWriter();
+//        writer.writeCsv("src/main/resources/solution.csv","Student_Name,Course_Count",solution);
+
+        //>>>>>>PARTE DOS
+
+        for(String[] linea: dataStudentsExams){
+            for(Student student: studentsList){
+                if(linea[0].equals(student.getName())){
+                    Exams exam =examCreator.createObject(student.getExams(),linea);
+                    exam.setStudent(student);
+                    boolean found = false;
+                    for(Exams e: examsList){
+                        if(e.equals(exam)){
+                            found = true;
                         }
                     }
-                    if(!foundCourse){                               //caso: no encontre el curso pero si el estudiante
-                        coursesList.add(course);
-                        s.addCourse(course);
-                        course.addStudent(s);
+                    if(!found){
+                        examsList.add(exam);
                     }
-                    found = true;
+                    break;
                 }
             }
-            if(!found){
-                boolean foundCourse = false;
-                for (Course c : coursesList){                    //for para los cursos
-                    if(c.equals(course)){                       //caso: encontre el curso pero no el estudiante
-                        studentsList.add(student);
-                        student.addCourse(c);
-                        c.addStudent(student);
-                        foundCourse = true;
-                    }
-                }
-                if(!foundCourse){                               //caso: no encontre el curso y no encontre el estudiante
-                    coursesList.add(course);
-                    studentsList.add(student);
-                    student.addCourse(course);
-                    course.addStudent(student);
-                }
-
+        }
+//        List<String> listaSolution2 = new ArrayList<>();
+//        for(Exams exams: examsList){
+//                listaSolution2.add(exams.toStringForExpected());
+//        }
+//        listaSolution2 = sorter.sortStrings(listaSolution2);
+//        System.out.println(listaSolution2);
+        List<String> listaSolution2 = new ArrayList<>();
+        for(Student student: studentsList){
+            for(Exams exam: student.getExams()){
+                listaSolution2.add(exam.toStringForExpected());
             }
-
-
         }
-
-
-        List<Student> lista = getAlphabetical(studentsList);
-        List<String> listaSolution = new ArrayList<>();
-        for(Student s: lista){
-            String elemento = s.getName() + "," + String.valueOf(s.getCoursesAmount());
-            listaSolution.add(elemento);
-        }
-        CsvWriter writer = new CsvWriter("src/main/resources/solution.csv","Student_Name,Course_Count");
-        writer.writeCsv(listaSolution);
-
-
-
+        listaSolution2 = sorter.sortStrings(listaSolution2);
+        System.out.println(listaSolution2);
+        System.out.println(examsList.size());
 
 }
-
-
-        public static List<Student> getAlphabetical(List<Student> base){
-            List<Student> resultado = new ArrayList<>();
-            return getAlphabeticalPrivate(base,resultado);
-        }
-        private static List<Student> getAlphabeticalPrivate(List<Student> base, List<Student> resultado){
-            if(base.size()==1){
-                resultado.add(base.getFirst());
-                return resultado;
-            }
-            else{
-                Student primero = base.getFirst();
-                String primera = base.getFirst().getName();
-                for (Student student: base){
-                    if(student.getName().compareTo(primera)<0){
-                        primera = student.getName();
-                        primero = student;
-                    }
-                }
-                base.remove(primero);
-                resultado.add(primero);
-                return getAlphabeticalPrivate(base,resultado);
+    public static void addExamToList(List<Exams> listExams, Exams exam){
+        boolean found = false;
+        for(Exams e: listExams){
+            if(e.equals(exam)){
+                found = true;
+                break;
             }
         }
+        if(!found){
+            listExams.add(exam);
+        }
+    }
 
 }
 

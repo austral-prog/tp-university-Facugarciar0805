@@ -1,7 +1,7 @@
-package com.university.course;
+package com.university.Objetos.course;
 
-import com.university.CsvWorker.Creatable;
-import com.university.student.Student;
+import com.university.Objetos.Creators.Creatable;
+import com.university.Objetos.student.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,13 +28,22 @@ public class Course implements Creatable {
         return students;
     }
     public void addStudent(Student s){
-        students.add(s);
+        boolean found = false;
+        for(Student student:students){
+            if(student.equals(s)){
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            students.add(s);
+        }
     }
     public String getCourseName(){
         return courseName;
     }
     public boolean equals(Course c){
-        return  c.getCourseName().equals(courseName);// && c.getProfessor().equals(professor)&& c.getClassNumber()==classNumber;
+        return  c.getCourseName().equals(courseName);
     }
     public boolean containsStudent(Student s){
         return students.contains(s);

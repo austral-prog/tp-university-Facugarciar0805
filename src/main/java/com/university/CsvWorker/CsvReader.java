@@ -10,14 +10,15 @@ public class CsvReader {
     private String line;
     private String splitBy;
     private BufferedReader bufferedRead;
-    private List<String[]> data;
     public CsvReader(){
         this.line = "";
         this.splitBy = ",";
         this.bufferedRead = null;
-        this.data = new ArrayList<>();
     }
+
+
     public List<String[]> readCsv(String filePath){
+        List<String[]> data = new ArrayList<>();
         try {
             bufferedRead = new BufferedReader(new FileReader(filePath));
             while(true){
