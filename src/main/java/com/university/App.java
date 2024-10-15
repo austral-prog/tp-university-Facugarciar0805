@@ -42,10 +42,16 @@ public class App {
 
 
         for(String[] linea: dataStudentCourses){
-            Student student= studentCreator.createObject(studentsList,linea);
-            Course course = courseCreator.createObject(coursesList,linea);
-            student.addCourse(course);
-            course.addStudent(student);
+            if(dataStudentCourses.indexOf(linea)==0){
+                continue;
+            }
+            else{
+                Student student= studentCreator.createObject(studentsList,linea);
+                Course course = courseCreator.createObject(coursesList,linea);
+                student.addCourse(course);
+                course.addStudent(student);
+            }
+
         }
 
         List<String> listaStrings = new ArrayList<>();
@@ -56,59 +62,40 @@ public class App {
         List<String> solution = sorter.sortStrings(listaStrings);
 
 
-
         //Creo un escritor de csv y escribo el solution.csv
-//        CsvWriter writer = new CsvWriter();
-//        writer.writeCsv("src/main/resources/solution.csv","Student_Name,Course_Count",solution);
+        CsvWriter writer = new CsvWriter();
+        writer.writeCsv("src/main/resources/solution.csv","Student_Name,Course_Count",solution);
 
         //>>>>>>PARTE DOS
 
         for(String[] linea: dataStudentsExams){
-            for(Student student: studentsList){
-                if(linea[0].equals(student.getName())){
-                    Exams exam =examCreator.createObject(student.getExams(),linea);
-                    exam.setStudent(student);
-                    boolean found = false;
-                    for(Exams e: examsList){
-                        if(e.equals(exam)){
-                            found = true;
-                        }
+            if(dataStudentsExams.indexOf(linea)!=0) {
+                for (Student student : studentsList) {
+                    if (linea[0].equals(student.getName())) {
+                        Exams exam = examCreator.createObject(student.getExams(), linea);
+                        exam.setStudent(student);
+                        break;
                     }
-                    if(!found){
-                        examsList.add(exam);
-                    }
-                    break;
                 }
             }
         }
-//        List<String> listaSolution2 = new ArrayList<>();
-//        for(Exams exams: examsList){
-//                listaSolution2.add(exams.toStringForExpected());
-//        }
-//        listaSolution2 = sorter.sortStrings(listaSolution2);
-//        System.out.println(listaSolution2);
-        List<String> listaSolution2 = new ArrayList<>();
-        for(Student student: studentsList){
-            for(Exams exam: student.getExams()){
-                listaSolution2.add(exam.toStringForExpected());
-            }
-        }
-        listaSolution2 = sorter.sortStrings(listaSolution2);
-        System.out.println(listaSolution2);
-        System.out.println(examsList.size());
 
-}
-    public static void addExamToList(List<Exams> listExams, Exams exam){
-        boolean found = false;
-        for(Exams e: listExams){
-            if(e.equals(exam)){
-                found = true;
-                break;
+            for(Student student: studentsList){
+                for(Exams exam: student.getExams()){
+                    examsList.add(exam);
+                }
             }
-        }
-        if(!found){
-            listExams.add(exam);
-        }
+            List<String> listaSolution2 = new ArrayList<>();
+
+            for(Exams exams: examsList){
+                  listaSolution2.add(exams.toStringForExpected());
+            }
+            listaSolution2 = sorter.sortStrings(listaSolution2);
+
+
+        writer.writeCsv("src/main/resources/solution_2.csv","Subject_Name,Evaluation_Name,Student_Name,Grade",listaSolution2);
+
+
     }
 
 }
