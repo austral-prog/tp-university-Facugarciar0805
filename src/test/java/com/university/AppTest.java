@@ -1,6 +1,5 @@
 package com.university;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,10 +7,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class AppTest {
+
     @Test
     public void testSolutionCSVMatchesExpected() {
         String solutionFilePath = "src/main/resources/solution.csv";
@@ -41,11 +42,11 @@ public class AppTest {
             String solutionLine;
             String expectedLine;
 
-            while ((solutionLine = solutionReader.readLine()) != null && 
+            while ((solutionLine = solutionReader.readLine()) != null &&
                    (expectedLine = expectedReader.readLine()) != null) {
                 assertEquals(expectedLine, solutionLine, "Mismatch found in the CSV file content.");
             }
-            
+
             // Ensure both files have the same number of lines
             assertEquals(solutionReader.readLine(), expectedReader.readLine(), "Files have different number of lines.");
 
