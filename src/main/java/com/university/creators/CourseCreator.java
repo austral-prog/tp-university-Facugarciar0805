@@ -1,6 +1,6 @@
-package com.university.Objetos.Creators;
+package com.university.creators;
 
-import com.university.Objetos.course.Course;
+import com.university.objetos.course.Course;
 
 import java.util.List;
 

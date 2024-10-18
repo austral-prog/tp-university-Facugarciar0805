@@ -1,7 +1,4 @@
-package com.university;
-import com.university.Objetos.Creators.ExamCreator;
-import com.university.Objetos.exams.Exams;
-import com.university.Objetos.student.Student;
+package com.university.sorterTest;
 import com.university.sorter.Sorter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

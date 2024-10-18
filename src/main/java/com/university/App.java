@@ -1,13 +1,12 @@
 package com.university;
 
-import com.university.CsvWorker.*;
-import com.university.Objetos.Creators.CourseCreator;
-import com.university.Objetos.Creators.Creatable;
-import com.university.Objetos.Creators.ExamCreator;
-import com.university.Objetos.Creators.StudentCreator;
-import com.university.Objetos.course.Course;
-import com.university.Objetos.exams.Exams;
-import com.university.Objetos.student.Student;
+import com.university.csvWorker.*;
+import com.university.creators.CourseCreator;
+import com.university.creators.ExamCreator;
+import com.university.creators.StudentCreator;
+import com.university.objetos.course.Course;
+import com.university.objetos.exams.Exams;
+import com.university.objetos.student.Student;
 import com.university.sorter.Sorter;
 
 import java.util.*;

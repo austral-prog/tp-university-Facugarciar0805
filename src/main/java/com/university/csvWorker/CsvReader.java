@@ -1,4 +1,4 @@
-package com.university.CsvWorker;
+package com.university.csvWorker;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

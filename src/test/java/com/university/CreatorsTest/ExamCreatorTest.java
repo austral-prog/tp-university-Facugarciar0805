@@ -1,7 +1,7 @@
 package com.university.CreatorsTest;
-import com.university.Objetos.Creators.ExamCreator;
-import com.university.Objetos.exams.Exams;
-import com.university.Objetos.student.Student;
+import com.university.creators.ExamCreator;
+import com.university.objetos.exams.Exams;
+import com.university.objetos.student.Student;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

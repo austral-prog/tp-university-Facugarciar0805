@@ -1,8 +1,7 @@
-package com.university.Objetos.Creators;
+package com.university.creators;
 
 
-import com.university.Objetos.exams.Exams;
-import com.university.Objetos.student.Student;
+import com.university.objetos.exams.Exams;
 
 import java.util.List;
 

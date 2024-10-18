@@ -1,7 +1,7 @@
-package com.university.Objetos.course;
+package com.university.objetos.course;
 
-import com.university.Objetos.Creators.Creatable;
-import com.university.Objetos.student.Student;
+import com.university.creators.Creatable;
+import com.university.objetos.student.Student;
 
 import java.util.ArrayList;
 import java.util.List;

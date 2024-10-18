@@ -1,13 +1,7 @@
 package com.university.CsvWorkerTest;
-import com.university.CsvWorker.CsvReader;
+import com.university.csvWorker.CsvReader;
 import org.junit.jupiter.api.Test;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
