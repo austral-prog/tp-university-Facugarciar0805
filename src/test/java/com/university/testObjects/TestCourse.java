@@ -1,16 +1,13 @@
-package com.university.CreatorsTest;
-import com.university.creators.CourseCreator;
+package com.university.testObjects;
+
 import com.university.objetos.course.Course;
 import com.university.objetos.student.Student;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class CourseCreatorTest {
+public class TestCourse {
     @Test
     public void testCreateCourse(){
         Course c = new Course("economics","juan", "345");
@@ -35,19 +32,6 @@ public class CourseCreatorTest {
         Course c = new Course("economics","juan", "345");
         Course c2 = new Course("economics","pedro", "234");
         assertTrue(c.equals(c2));
-
-    }
-    @Test
-    public void testCreateStudentWithCreator(){
-        List<Course> courses = new ArrayList<>();
-        CourseCreator courseCreator = new CourseCreator();
-        courseCreator.createObject(courses, new String[]{"345","Math","Facundo", "facu@mail", "prof juan"});
-        assertEquals(1,courses.size());
-        assertEquals("Math", courses.getFirst().getCourseName());
-        assertEquals("prof juan", courses.getFirst().getProfessor());
-        assertEquals("345", courses.getFirst().getClassNumber());
-
-
 
     }
 }

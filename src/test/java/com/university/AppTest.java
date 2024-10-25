@@ -2,19 +2,29 @@ package com.university;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class AppTest {
-
+    @BeforeEach
+    public void deleteSolutions(){
+        File file1 = new File("src/main/resources/solution.csv");
+        file1.delete();
+        File file2 = new File("src/main/resources/solution_2.csv");
+        file2.delete();
+    }
     @Test
     public void testSolutionCSVMatchesExpected() {
+
         String solutionFilePath = "src/main/resources/solution.csv";
         String expectedFilePath = "src/main/resources/expected.csv";
 
@@ -61,7 +71,7 @@ public class AppTest {
 
         // Check if solution.csv exists before running the test
         if (Files.exists(Paths.get(solutionFilePath))) {
-            fail("The solution.csv file exists before the test runs.");
+            fail("The solution_2.csv file exists before the test runs.");
         }
 
         try {
@@ -73,7 +83,7 @@ public class AppTest {
 
         // Check if solution.csv was created after running the test
         if (!Files.exists(Paths.get(solutionFilePath))) {
-            fail("The solution.csv file does not exist after running the test.");
+            fail("The solution_2.csv file does not exist after running the test.");
         }
 
         // Proceed to compare the solution.csv with expected.csv
