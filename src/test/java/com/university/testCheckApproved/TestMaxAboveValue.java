@@ -1,8 +1,9 @@
 package com.university.testCheckApproved;
 
+import com.university.aprovedCheckers.AverageAboveValue;
 import com.university.aprovedCheckers.MaxAboveValue;
 import com.university.objetos.evaluations.Evaluations;
-import com.university.objetos.evaluations.Parcial;
+import com.university.objetos.evaluations.FinalPracticalWork;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -15,19 +16,18 @@ public class TestMaxAboveValue {
     @Test
     public void testMaxAboveValuePass(){
         MaxAboveValue maxAboveValue = new MaxAboveValue();
-        Parcial parcial= new Parcial("Math","Written_exam","Parcial",3);
         List<Evaluations> evaluations = new ArrayList<>();
-        evaluations.add(parcial);
-        assertTrue(maxAboveValue.checkApproved(evaluations,4));
+        Evaluations e1 = new FinalPracticalWork("Math", "FINAL_PRACTICAL_WORK", "TP3", 3);
+        evaluations.add(e1);
+        assertTrue(maxAboveValue.checkApproved(evaluations, 4));
     }
     @Test
-    public void testMaxAboveValueFail(){
+    public void testMaxAboveValueNoEvaluation(){
         MaxAboveValue maxAboveValue = new MaxAboveValue();
-        Parcial parcial= new Parcial("Math","Written_exam","Parcial",6);
         List<Evaluations> evaluations = new ArrayList<>();
-        evaluations.add(parcial);
-        assertFalse(maxAboveValue.checkApproved(evaluations,4));
+        assertFalse(maxAboveValue.checkApproved(evaluations, 5));
     }
+
 }
 
 

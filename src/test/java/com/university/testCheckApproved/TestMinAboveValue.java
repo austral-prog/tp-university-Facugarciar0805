@@ -2,7 +2,7 @@ package com.university.testCheckApproved;
 
 import com.university.aprovedCheckers.MinAboveValue;
 import com.university.objetos.evaluations.Evaluations;
-import com.university.objetos.evaluations.Parcial;
+import com.university.objetos.evaluations.FinalPracticalWork;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -13,21 +13,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestMinAboveValue {
         @Test
-        public void testMaxAboveValuePass(){
+        public void testMinAboveValuePass(){
             MinAboveValue minAboveValue = new MinAboveValue();
-            Parcial parcial= new Parcial("Math","Written_exam","Parcial",6);
             List<Evaluations> evaluations = new ArrayList<>();
-            evaluations.add(parcial);
+            Evaluations e1 = new FinalPracticalWork("Math", "FINAL_PRACTICAL_WORK", "TP3", 5);
+            evaluations.add(e1);
+            assertTrue(minAboveValue.checkApproved(evaluations, 4));
+            Evaluations e2 = new FinalPracticalWork("Math", "FINAL_PRACTICAL_WORK", "TP2", 6);
+            evaluations.add(e2);
             assertTrue(minAboveValue.checkApproved(evaluations,4));
-        }
-        @Test
-        public void testMaxAboveValueFail(){
-            MinAboveValue minAboveValue  = new MinAboveValue();
-            Parcial parcial= new Parcial("Math","Written_exam","Parcial",3);
-            List<Evaluations> evaluations = new ArrayList<>();
-            evaluations.add(parcial);
+            Evaluations e3 = new FinalPracticalWork("Math", "FINAL_PRACTICAL_WORK", "TP1", 3);
+            evaluations.add(e3);
             assertFalse(minAboveValue.checkApproved(evaluations,4));
         }
-
 
 }

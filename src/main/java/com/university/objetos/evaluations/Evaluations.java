@@ -48,7 +48,7 @@ public abstract class Evaluations implements Creatable {
         return student;
     }
     public String toStringForExpected2(){
-        return subject + "," + evaluationName + "," + student.getName() + "," + getTotalMark();
+        return subject + "," + evaluationName + "," + student.getName() + "," + getFinalGrade();
     }
     public boolean equalsAnyEvaluation(Evaluations e){
         if(e != null){
@@ -59,7 +59,9 @@ public abstract class Evaluations implements Creatable {
         else{
             return false;
         }
+
     }
+    public abstract float getFinalGrade();
 
 
 

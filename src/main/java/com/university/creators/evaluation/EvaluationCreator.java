@@ -1,33 +1,27 @@
 package com.university.creators.evaluation;
 
-import com.university.objetos.evaluations.Evaluations;
-import com.university.objetos.evaluations.Final;
-import com.university.objetos.evaluations.Parcial;
-import com.university.objetos.evaluations.TrabajoPractico;
+import com.university.creators.ObjectCreator;
+import com.university.objetos.evaluations.*;
 import com.university.objetos.student.Student;
 
-public class EvaluationCreator {
-    TrabajoPracticoCreator trabajoPracticoCreator;
-    FinalCreator finalCreator;
-    ParcialCreator parcialCreator;
-    public EvaluationCreator(){
-        this.trabajoPracticoCreator = new TrabajoPracticoCreator();
-        this.finalCreator = new FinalCreator();
-        this.parcialCreator = new ParcialCreator();
-    }
+import java.util.List;
 
-    public Evaluations createEvaluations(Student s, String[] linea){
-        if(linea[3].contains("Parcial")){
-            Parcial parcial = parcialCreator.createObject(s.getParciales(),linea);
-            return parcial;
-        } else if (linea[3].contains("TP")) {
-            TrabajoPractico tp = trabajoPracticoCreator.createObject(s.getTps(),linea);
-            return tp;
-        }else{
-            Final final1 = finalCreator.createObject(s.getFinales(),linea);
-            return final1;
+public class EvaluationCreator implements ObjectCreator<Evaluations> {
+
+    @Override
+    public Evaluations createObject(List<Evaluations> lista, String[] data) {
+        switch(data[2]){
+            case "WRITTEN_EXAM":
+                return new WrittenExam(data[1], data[2], data[3], Float.parseFloat(data[5]));
+            case "FINAL_PRACTICAL_WORK":
+                return new FinalPracticalWork(data[1], data[2], data[3], Float.parseFloat(data[5]));
+            case "PRACTICAL_WORK":
+                return new PraticalWork(data[1], data[2], data[3], Float.parseFloat(data[5]));
+            case "ORAL_EXAM":
+                return new OralExam(data[1], data[2], data[3], Float.parseFloat(data[5]));
+            default:
+                return null;
         }
+
     }
-
-
 }

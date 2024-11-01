@@ -12,44 +12,48 @@ import java.util.List;
 
 public class TestEvaluationCreator {
     @Test
-    public void testEvaluationCreator(){
-        Student s1= new Student("Facu", "facu@gmail");
-        String[] linea = {"Facu","Math", "Written", "Parcial", "ej1", "10" };
-        String[] linea2 = {"Facu","Math", "Written", "Final", "ej1", "10" };
-        String[] linea3 = {"Facu","Math", "Written", "TP1", "ej1", "10" };
+    public void testEvaluationCreator() {
+        Student s1 = new Student("Facu", "facu@gmail");
         EvaluationCreator evaluationCreator = new EvaluationCreator();
-        Evaluations e1 = evaluationCreator.createEvaluations(s1, linea);
-        Evaluations e2 = evaluationCreator.createEvaluations(s1, linea2);
-        Evaluations e3 = evaluationCreator.createEvaluations(s1, linea3);
-        s1.addEvaluation(e1);
-        s1.addEvaluation(e2);
-        s1.addEvaluation(e3);
-        e1.setStudent(s1);
-        e2.setStudent(s1);
-        e3.setStudent(s1);
-        assertEquals(3,s1.getEvaluations().size());
-        assertEquals(1, s1.getParciales().size());
-        assertEquals(1, s1.getTps().size());
-        assertEquals(1,s1.getFinales().size());
+        String[] linea = {"Alice Cyan", "Computer Science", "FINAL_PRACTICAL_WORK", "TP Final", "Ej3", "7"};
+        String[] linea2 = {"Alice Cyan", "Computer Science", "PRACTICAL_WORK", "TP Final", "Ej3", "7"};
+        String[] linea3 = {"Alice Cyan", "Computer Science", "ORAL_EXAM", "TP Final", "Ej3", "7"};
+        String[] linea4 = {"Alice Cyan", "Computer Science", "WRITTEN_EXAM", "TP Final", "Ej3", "7"};
+        Evaluations evaluation = evaluationCreator.createObject(s1.getEvaluations(), linea);
+        Evaluations evaluation2 = evaluationCreator.createObject(s1.getEvaluations(), linea2);
+        Evaluations evaluation3 = evaluationCreator.createObject(s1.getEvaluations(), linea3);
+        Evaluations evaluation4 = evaluationCreator.createObject(s1.getEvaluations(), linea4);
+        s1.addEval(evaluation);
+        s1.addEval(evaluation2);
+        s1.addEval(evaluation3);
+        s1.addEval(evaluation4);
+        assertEquals(4, s1.getEvaluations().size());
+        assertEquals("FINAL_PRACTICAL_WORK", s1.getEvaluations().get(0).getEvaluationType());
+        assertEquals("PRACTICAL_WORK", s1.getEvaluations().get(1).getEvaluationType());
+        assertEquals("ORAL_EXAM", s1.getEvaluations().get(2).getEvaluationType());
+        assertEquals("WRITTEN_EXAM", s1.getEvaluations().get(3).getEvaluationType());
     }
     @Test
-    public void testAddGradesWithCreator(){
-        Student s1= new Student("Facu", "facu@gmail");
-        String[] linea = {"Facu","Math", "Written", "Parcial", "ej1", "10" };
-        String[] linea2 = {"Facu","Math", "Written", "Parcial", "ej2", "9" };
-        String[] linea3 = {"Facu","Math", "Written", "Parcial", "ej3", "2" };
+    public void testAddSameEvaluation(){
+        Student s1 = new Student("Facu", "facu@gmail");
         EvaluationCreator evaluationCreator = new EvaluationCreator();
-        Evaluations e1 = evaluationCreator.createEvaluations(s1, linea);
-        s1.addEvaluation(e1);
-        Evaluations e2 = evaluationCreator.createEvaluations(s1, linea2);
-        s1.addEvaluation(e2);
-        Evaluations e3 = evaluationCreator.createEvaluations(s1, linea3);
-        s1.addEvaluation(e3);
-        e1.setStudent(s1);
-        e2.setStudent(s1);
-        e3.setStudent(s1);
-        assertEquals(1,s1.getEvaluations().size());
-        assertEquals(1, s1.getParciales().size());
-        assertEquals(7, s1.getParciales().getFirst().getTotalMark());
+        String[] linea = {"Alice Cyan", "Computer Science", "FINAL_PRACTICAL_WORK", "TP Final", "Ej3", "7"};
+        Evaluations evaluation = evaluationCreator.createObject(s1.getEvaluations(), linea);
+        s1.addEval(evaluation);
+        evaluation.setStudent(s1);
+        s1.addEval(evaluation);
+        assertEquals(1, s1.getEvaluations().size());
+        assertEquals(2, s1.getEvaluations().getFirst().getGrade().size());
     }
+    @Test
+    public void testCreateNullEvaluation(){
+        Student s1 = new Student("Facu", "facu@gmail");
+        EvaluationCreator evaluationCreator = new EvaluationCreator();
+        String[] linea = {"Alice Cyan", "Computer Science", "PRACTICAL_EXAM", "TP Final", "Ej3", "7"};
+        Evaluations evaluation = evaluationCreator.createObject(s1.getEvaluations(), linea);
+        s1.addEval(evaluation);
+        assertEquals(0, s1.getEvaluations().size());
+
+    }
+
 }
