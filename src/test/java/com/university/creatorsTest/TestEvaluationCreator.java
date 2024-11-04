@@ -1,14 +1,10 @@
 package com.university.creatorsTest;
 
-import com.university.creators.evaluation.EvaluationCreator;
-import com.university.objetos.evaluations.Evaluations;
-import com.university.objetos.student.Student;
+import com.university.primeraParte.creators.evaluation.EvaluationCreator;
+import com.university.primeraParte.objetos.evaluations.Evaluations;
+import com.university.primeraParte.objetos.Student;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-
-import java.util.Arrays;
-import java.util.List;
 
 public class TestEvaluationCreator {
     @Test

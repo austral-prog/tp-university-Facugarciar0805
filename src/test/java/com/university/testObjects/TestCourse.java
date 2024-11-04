@@ -1,7 +1,7 @@
 package com.university.testObjects;
 
-import com.university.objetos.course.Course;
-import com.university.objetos.student.Student;
+import com.university.primeraParte.objetos.Course;
+import com.university.primeraParte.objetos.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,5 +1,5 @@
 package com.university.csvWorkerTest;
-import com.university.csvWorker.CsvReader;
+import com.university.primeraParte.csvWorker.CsvReader;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

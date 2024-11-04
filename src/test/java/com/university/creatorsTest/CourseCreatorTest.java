@@ -1,6 +1,6 @@
 package com.university.creatorsTest;
-import com.university.creators.course.CourseCreator;
-import com.university.objetos.course.Course;
+import com.university.primeraParte.creators.course.CourseCreator;
+import com.university.primeraParte.objetos.Course;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

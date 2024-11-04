@@ -1,9 +1,8 @@
 package com.university.testCheckApproved;
 
-import com.university.aprovedCheckers.AverageAboveValue;
-import com.university.aprovedCheckers.MaxAboveValue;
-import com.university.objetos.evaluations.Evaluations;
-import com.university.objetos.evaluations.FinalPracticalWork;
+import com.university.primeraParte.aprovedCheckers.MaxAboveValue;
+import com.university.primeraParte.objetos.evaluations.Evaluations;
+import com.university.primeraParte.objetos.evaluations.FinalPracticalWork;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
