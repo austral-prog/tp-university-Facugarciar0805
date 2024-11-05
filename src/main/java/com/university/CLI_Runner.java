@@ -1,13 +1,14 @@
 package com.university;
 
 import com.university.CLILogic.CLI;
-import com.university.CLILogic.CRUDRepository;
-import com.university.CLILogic.FlowActionStudent;
+import com.university.CLILogic.implementations.CRUDRepository;
+import com.university.CLILogic.flowActionEntities.FlowActionCourse;
+import com.university.CLILogic.flowActionEntities.FlowActionEvaluation;
+import com.university.CLILogic.flowActionEntities.FlowActionStudent;
 import com.university.CLILogic.implementations.CrudRepoCourse;
 import com.university.CLILogic.implementations.CrudRepoEvaluation;
 import com.university.CLILogic.implementations.CrudRepoStudent;
 
-import java.awt.*;
 import java.util.Scanner;
 public class CLI_Runner implements CLI {
     @Override
@@ -15,11 +16,13 @@ public class CLI_Runner implements CLI {
         MenuDisplays menuDisplays = new MenuDisplays();
         Scanner scanner = new Scanner(System.in);
         CrudRepoStudent crudRepoStudent = new CrudRepoStudent();
-        FlowActionStudent flowActionStudent = new FlowActionStudent(crudRepoStudent, scanner);
         CrudRepoCourse crudRepoCourse = new CrudRepoCourse();
         CrudRepoEvaluation crudRepoEvaluation = new CrudRepoEvaluation();
+        FlowActionStudent flowActionStudent = new FlowActionStudent(crudRepoStudent, crudRepoCourse, crudRepoEvaluation, scanner);
+        FlowActionCourse flowActionCourse = new FlowActionCourse(crudRepoStudent, crudRepoCourse, crudRepoEvaluation, scanner);
+        FlowActionEvaluation flowActionEvaluation = new FlowActionEvaluation(crudRepoStudent, crudRepoCourse, crudRepoEvaluation, scanner);
 
-        System.out.println("Welcome to the Hogwarts School CLI");
+        System.out.println("Welcome to the Hogwarts University CLI");
         System.out.println("Here you can load,read and delete data of all the school");
         boolean looping = true;
         do{
@@ -30,12 +33,10 @@ public class CLI_Runner implements CLI {
                     looping = flowActionStudent.act();
                     break;
                 case "2":
-                    menuDisplays.displayActionsMenu(crudRepoCourse.getIdentifier());
-                    String courseAction = scanner.next();
+                    looping = flowActionCourse.act();
                     break;
                 case "3":
-                    menuDisplays.displayActionsMenu(crudRepoEvaluation.getIdentifier());
-                    String evaluationAction = scanner.next();
+                    looping = flowActionEvaluation.act();
                     break;
                 case "4":
                     looping = false;

@@ -1,5 +1,7 @@
 package com.university.CLILogic;
 
+import com.university.CLILogic.implementations.CRUDRepository;
+
 public interface CLI {
     /**
      * Runs the Command Line Interface (CLI) for interacting with multiple entity types.

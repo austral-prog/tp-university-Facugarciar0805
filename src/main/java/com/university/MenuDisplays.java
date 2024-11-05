@@ -10,12 +10,21 @@ public class MenuDisplays {
         System.out.print("Enter your selection: ");
     }
     public void displayActionsMenu(String clase){
-        System.out.println("Which of the following actions suits what you want to do with Students Data?:");
+        System.out.println("What do yo want to do with " + clase + " data: ");
         System.out.println("(1)-> Create new " + clase);
         System.out.println("(2)-> Read "+ clase + " data");
         System.out.println("(3)-> Update " + clase + " data");
         System.out.println("(4)-> Remove " + clase + " data");
-        System.out.println("(5)-> Back to Menu");
+        System.out.println("(5)-> Print "+clase+ " data");
+        System.out.println("(6)-> Back to Menu");
+        System.out.print("Enter your selection: ");
+    }
+    public void displayTypesOfEval(){
+        System.out.println("Select the type of evaluation you want to create: ");
+        System.out.println("(1) -> FINAL_PRACTICAL_WORK");
+        System.out.println("(2) -> PRACTICAL_WORK");
+        System.out.println("(3) -> WRITTEN_EXAM");
+        System.out.println("(4) -> ORAL_EXAM");
         System.out.print("Enter your selection: ");
     }
 }

@@ -1,4 +1,6 @@
-package com.university.CLILogic;
+package com.university.CLILogic.implementations;
+
+import com.university.CLILogic.Entity;
 
 public interface CRUDRepository<T extends Entity> {
     /**
@@ -40,4 +42,6 @@ public interface CRUDRepository<T extends Entity> {
     String getIdentifier();
 
     Class<T> getEntityClass();
+
+    void printEntity();
 }
