@@ -1,4 +1,4 @@
-package com.university;
+package com.university.segundaParte;
 
 public class MenuDisplays {
     public void displayInitialMenu(){
@@ -17,6 +17,18 @@ public class MenuDisplays {
         System.out.println("(4)-> Remove " + clase + " data");
         System.out.println("(5)-> Print "+clase+ " data");
         System.out.println("(6)-> Back to Menu");
+        System.out.print("Enter your selection: ");
+    }
+    public void displayActionStudent(){
+        System.out.println("What do yo want to do with Student data: ");
+        System.out.println("(1)-> Create new Student");
+        System.out.println("(2)-> Read Student data");
+        System.out.println("(3)-> Update Student data");
+        System.out.println("(4)-> Remove Student data");
+        System.out.println("(5)-> Print Student data");
+        System.out.println("(6)-> Asign Course to Student");
+        System.out.println("(7)-> Asign Evaluation to Student");
+        System.out.println("(8)-> Back to Menu");
         System.out.print("Enter your selection: ");
     }
     public void displayTypesOfEval(){

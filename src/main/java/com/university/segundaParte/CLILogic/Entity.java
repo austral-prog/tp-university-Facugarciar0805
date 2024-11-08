@@ -1,4 +1,4 @@
-package com.university.CLILogic;
+package com.university.segundaParte.CLILogic;
 
 public interface Entity {
     int getId();

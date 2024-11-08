@@ -13,7 +13,7 @@ public class MinAboveValue implements CheckApproved{
         }
         boolean aprobado = true;
         for(Evaluations e: exams){
-            if(e.getFinalGrade()< nota){
+            if(e.getFinalGrade()<= nota){
                 aprobado = false;
                 break;
             }

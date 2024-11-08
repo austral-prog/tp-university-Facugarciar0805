@@ -1,6 +1,6 @@
 package com.university.primeraParte.objetos;
 
-import com.university.CLILogic.Entity;
+import com.university.segundaParte.CLILogic.Entity;
 
 import java.util.ArrayList;
 import java.util.List;

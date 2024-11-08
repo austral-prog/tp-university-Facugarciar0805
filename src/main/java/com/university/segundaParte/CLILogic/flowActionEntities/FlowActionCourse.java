@@ -1,10 +1,10 @@
-package com.university.CLILogic.flowActionEntities;
+package com.university.segundaParte.CLILogic.flowActionEntities;
 
-import com.university.CLILogic.InputValidator;
-import com.university.CLILogic.implementations.CrudRepoCourse;
-import com.university.CLILogic.implementations.CrudRepoEvaluation;
-import com.university.CLILogic.implementations.CrudRepoStudent;
-import com.university.MenuDisplays;
+import com.university.segundaParte.CLILogic.InputValidator;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoCourse;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoEvaluation;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoStudent;
+import com.university.segundaParte.MenuDisplays;
 import com.university.primeraParte.objetos.Course;
 
 import java.util.InputMismatchException;
@@ -243,4 +243,6 @@ public class FlowActionCourse implements FlowActionInterface{
     public void printData() {
         crudRepoCourse.printEntity();
     }
+
+
 }

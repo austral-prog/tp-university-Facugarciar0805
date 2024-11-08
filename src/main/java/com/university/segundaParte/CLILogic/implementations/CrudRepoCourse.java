@@ -1,4 +1,4 @@
-package com.university.CLILogic.implementations;
+package com.university.segundaParte.CLILogic.implementations;
 
 import com.university.primeraParte.objetos.Course;
 
@@ -12,14 +12,14 @@ public class CrudRepoCourse implements CRUDRepository<Course> {
     }
     @Override
     public void create(Course entity) {
-        courses.put(entity.getId(), entity);
+        if(!courses.containsKey(entity.getId())){
+            courses.put(entity.getId(),entity);
+        }
     }
-
     @Override
     public Course read(int id) {
         return courses.get(id);
     }
-
     @Override
     public void update(int id, Course entity) {
         if(courses.containsKey(id)){
@@ -28,7 +28,6 @@ public class CrudRepoCourse implements CRUDRepository<Course> {
             courses.get(id).setSubject(entity.getCourseName());
         }
     }
-
     @Override
     public void delete(int id) {
         courses.remove(id);
@@ -51,4 +50,10 @@ public class CrudRepoCourse implements CRUDRepository<Course> {
             System.out.println("ID: "+entry.getKey()+", Course: " + entry.getValue().getCourseName() + ", " + entry.getValue().getProfessor());
         }
     }
+
+    public HashMap<Integer, Course> getEntity(){
+        return courses;
+    }
+
+
 }

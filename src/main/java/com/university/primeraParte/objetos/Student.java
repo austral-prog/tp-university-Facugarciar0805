@@ -1,6 +1,6 @@
 package com.university.primeraParte.objetos;
 
-import com.university.CLILogic.Entity;
+import com.university.segundaParte.CLILogic.Entity;
 import com.university.primeraParte.objetos.evaluations.Evaluations;
 
 import java.util.ArrayList;
@@ -46,8 +46,6 @@ public class Student implements Creatable, Entity {
         if(!found){
             courses.add(c);
         }
-
-
     }
     public String getMail(){
         return mail;
@@ -124,4 +122,5 @@ public class Student implements Creatable, Entity {
     public void setId(int id) {
         this.id = id;
     }
+
 }

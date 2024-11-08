@@ -1,6 +1,6 @@
-package com.university.CLILogic;
+package com.university.segundaParte.CLILogic;
 
-import com.university.CLILogic.implementations.CRUDRepository;
+import com.university.segundaParte.CLILogic.implementations.CRUDRepository;
 
 public interface CLI {
     /**

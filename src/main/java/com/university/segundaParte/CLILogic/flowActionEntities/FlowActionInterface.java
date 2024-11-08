@@ -1,4 +1,4 @@
-package com.university.CLILogic.flowActionEntities;
+package com.university.segundaParte.CLILogic.flowActionEntities;
 
 public interface FlowActionInterface {
     boolean act();

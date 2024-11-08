@@ -1,6 +1,5 @@
-package com.university.CLILogic.implementations;
+package com.university.segundaParte.CLILogic.implementations;
 
-import com.university.primeraParte.objetos.Course;
 import com.university.primeraParte.objetos.evaluations.Evaluations;
 
 import java.util.HashMap;
@@ -33,6 +32,7 @@ public class CrudRepoEvaluation implements CRUDRepository<Evaluations> {
             evaluations.get(id).setSubject(entity.getSubject());
             evaluations.get(id).setEvaluationName(entity.getEvaluationName());
             evaluations.get(id).setEvaluationType(entity.getEvaluationType());
+            evaluations.get(id).setGrade(entity.getFinalGrade());
         }
 
 
@@ -58,5 +58,9 @@ public class CrudRepoEvaluation implements CRUDRepository<Evaluations> {
         for (Map.Entry<Integer, Evaluations> entry : evaluations.entrySet()) {
             System.out.println("ID: "+entry.getKey()+", Eval: " + entry.getValue().getEvaluationName() + ", "+ entry.getValue().getSubject()+ ", "+ entry.getValue().getEvaluationType()+ ", "+ entry.getValue().getFinalGrade());
         }
+    }
+
+    public HashMap<Integer, Evaluations> getEntity(){
+        return evaluations;
     }
 }

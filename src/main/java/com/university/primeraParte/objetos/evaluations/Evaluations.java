@@ -1,6 +1,6 @@
 package com.university.primeraParte.objetos.evaluations;
 
-import com.university.CLILogic.Entity;
+import com.university.segundaParte.CLILogic.Entity;
 import com.university.primeraParte.objetos.Creatable;
 import com.university.primeraParte.objetos.Student;
 
@@ -73,6 +73,10 @@ public abstract class Evaluations implements Creatable, Entity {
 
     }
     public abstract float getFinalGrade();
+    public void setGrade(Float grade){
+        grades.clear();
+        grades.add(grade);
+    }
 
 
 

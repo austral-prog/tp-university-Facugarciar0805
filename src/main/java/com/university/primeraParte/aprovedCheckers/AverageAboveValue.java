@@ -19,6 +19,6 @@ public class AverageAboveValue implements CheckApproved{
             suma += e.getFinalGrade();
         }
         promedio = suma/exams.size();
-        return promedio > nota;
+        return promedio >= nota;
     }
 }

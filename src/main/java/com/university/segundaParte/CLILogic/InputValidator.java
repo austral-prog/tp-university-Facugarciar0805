@@ -1,4 +1,4 @@
-package com.university.CLILogic;
+package com.university.segundaParte.CLILogic;
 
 public class InputValidator {
     public boolean isValidName(String name){
@@ -19,8 +19,5 @@ public class InputValidator {
     public boolean isValidGrade(String grade){
         return grade.matches("^[0-9]+(\\.[0-9]+)?$");
     }
-
-
-
 
     }

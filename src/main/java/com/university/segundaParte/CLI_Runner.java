@@ -1,13 +1,13 @@
-package com.university;
+package com.university.segundaParte;
 
-import com.university.CLILogic.CLI;
-import com.university.CLILogic.implementations.CRUDRepository;
-import com.university.CLILogic.flowActionEntities.FlowActionCourse;
-import com.university.CLILogic.flowActionEntities.FlowActionEvaluation;
-import com.university.CLILogic.flowActionEntities.FlowActionStudent;
-import com.university.CLILogic.implementations.CrudRepoCourse;
-import com.university.CLILogic.implementations.CrudRepoEvaluation;
-import com.university.CLILogic.implementations.CrudRepoStudent;
+import com.university.segundaParte.CLILogic.CLI;
+import com.university.segundaParte.CLILogic.implementations.CRUDRepository;
+import com.university.segundaParte.CLILogic.flowActionEntities.FlowActionCourse;
+import com.university.segundaParte.CLILogic.flowActionEntities.FlowActionEvaluation;
+import com.university.segundaParte.CLILogic.flowActionEntities.FlowActionStudent;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoCourse;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoEvaluation;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoStudent;
 
 import java.util.Scanner;
 public class CLI_Runner implements CLI {

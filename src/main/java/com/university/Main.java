@@ -1,9 +1,10 @@
 package com.university;
 
-import com.university.CLILogic.implementations.CRUDRepository;
-import com.university.CLILogic.implementations.CrudRepoCourse;
-import com.university.CLILogic.implementations.CrudRepoEvaluation;
-import com.university.CLILogic.implementations.CrudRepoStudent;
+import com.university.segundaParte.CLILogic.implementations.CRUDRepository;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoCourse;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoEvaluation;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoStudent;
+import com.university.segundaParte.CLI_Runner;
 
 public class Main {
     public static void main(String[] args){

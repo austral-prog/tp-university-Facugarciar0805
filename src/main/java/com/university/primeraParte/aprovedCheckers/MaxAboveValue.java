@@ -10,6 +10,6 @@ public class MaxAboveValue implements CheckApproved{
         if(exams.size() == 0){
             return false;
         }
-        return nota>exams.getFirst().getFinalGrade();
+        return nota>=exams.getFirst().getFinalGrade();
     }
 }

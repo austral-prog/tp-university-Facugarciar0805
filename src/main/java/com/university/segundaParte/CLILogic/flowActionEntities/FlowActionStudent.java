@@ -1,12 +1,14 @@
-package com.university.CLILogic.flowActionEntities;
+package com.university.segundaParte.CLILogic.flowActionEntities;
 
-import com.university.CLILogic.InputValidator;
-import com.university.CLILogic.implementations.CrudRepoCourse;
-import com.university.CLILogic.implementations.CrudRepoEvaluation;
-import com.university.CLILogic.implementations.CrudRepoStudent;
+import com.university.segundaParte.CLILogic.InputValidator;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoCourse;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoEvaluation;
+import com.university.segundaParte.CLILogic.implementations.CrudRepoStudent;
 
-import com.university.MenuDisplays;
+import com.university.segundaParte.MenuDisplays;
+import com.university.primeraParte.objetos.Course;
 import com.university.primeraParte.objetos.Student;
+import com.university.primeraParte.objetos.evaluations.Evaluations;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -30,7 +32,7 @@ public class FlowActionStudent implements FlowActionInterface{
         boolean looping = true;
         String action;
         while(looping) {
-            menuDisplays.displayActionsMenu("Student");
+            menuDisplays.displayActionStudent();
             action = scanner.next();
             switch (action) {
                 case "1":
@@ -54,6 +56,14 @@ public class FlowActionStudent implements FlowActionInterface{
                     looping = askForAnotherAction();
                     break;
                 case "6":
+                    asignCourseToStudent();
+                    looping = askForAnotherAction();
+                    break;
+                case "7":
+                    asignEvaluationToStudent();
+                    looping = askForAnotherAction();
+                    break;
+                case "8":
                     return true;
                 default:
                     System.out.print("Please enter a valid Input: ");
@@ -63,6 +73,7 @@ public class FlowActionStudent implements FlowActionInterface{
     }
     @Override
     public  void create(){
+        scanner.nextLine();
         System.out.print("Enter the name of the Student you want to create: ");
         String name = scanner.nextLine();
         while(!inputValidator.isValidName(name)){
@@ -222,11 +233,127 @@ public class FlowActionStudent implements FlowActionInterface{
             }
         }
     }
-
     @Override
     public void printData() {
         crudRepoStudent.printEntity();
     }
+    public void asignCourseToStudent(){
+        System.out.print("Enter the student ID you want to asign to a course: ");
+        boolean chooseID = true;
+        Student student = null;
+        do{
+            try{
+                int id = scanner.nextInt();
+                student = crudRepoStudent.read(id);
+                if(student!=null){
+                    chooseID = false;
+                }
+                else{
+                    System.out.println("There is no student with that ID.");
+                    break;
+                }
+
+            }catch (InputMismatchException e){
+                System.out.println("The ID can only have numerical characters");
+                System.out.print("Enter a new ID: ");
+                scanner.nextLine(); // Limpiar el buffer
+            }
+        }while(chooseID);
+        if((!chooseID)){
+            System.out.println("These has to exist a course to asign a student to.");
+            System.out.print("Enter the Course ID:");
+            boolean choose2ID = true;
+            do{
+                try{
+                    int id = scanner.nextInt();
+                    Course course = crudRepoCourse.read(id);
+                    if(course!=null){
+                        try{
+                            crudRepoStudent.asignToCourse(student, course);
+                            System.out.println("Student: " + student.getName() + " has been  asigned to course: " + course.getCourseName());
+                        }catch (AlreadyExists e){
+                            System.out.println("Student: " + student.getName() + " is already asigned to course: " + course.getCourseName());
+                        }
+
+                        choose2ID = false;
+                    }
+                    else{
+                        System.out.println("There is no course with that ID.");
+                        break;
+                    }
+
+                }catch (InputMismatchException e){
+                    System.out.println("The ID can only have numerical characters");
+                    System.out.print("Enter a new ID: ");
+                    scanner.nextLine(); // Limpiar el buffer
+                }
+            }while(choose2ID);
+        }
+    }
+
+
+
+    public void asignEvaluationToStudent(){
+        System.out.print("Enter the student ID you want to asign to an Evaluation: ");
+        boolean chooseID = true;
+        Student student = null;
+        do{
+            try{
+                int id = scanner.nextInt();
+                student = crudRepoStudent.read(id);
+                if(student!=null){
+                    chooseID = false;
+                }
+                else{
+                    System.out.println("There is no student with that ID.");
+                    break;
+                }
+
+            }catch (InputMismatchException e){
+                System.out.println("The ID can only have numerical characters");
+                System.out.print("Enter a new ID: ");
+                scanner.nextLine(); // Limpiar el buffer
+            }
+        }while(chooseID);
+        if((!chooseID)){
+            System.out.println("These has to exist an evaluation to asign a student to.");
+            System.out.print("Enter the Evaluation ID:");
+            boolean choose2ID = true;
+            do{
+                try{
+                    int id = scanner.nextInt();
+                    Evaluations evaluation = crudRepoEvaluation.read(id);
+                    if(evaluation!=null){
+                        try{
+                            if(student.isOnCourse(evaluation.getSubject())){
+                                crudRepoStudent.asignToEvaluation(student, evaluation);
+                                System.out.println("Student: " + student.getName() + " has been asigned to evaluation: " + evaluation.getEvaluationName() + ", " + evaluation.getSubject());
+                            }
+                            else{
+                                System.out.println("Student: " + student.getName() + " has to be asigned to course " + evaluation.getSubject()+  " first. ");
+                            }
+
+                        }catch (AlreadyExists e){
+                            System.out.println("Student: " + student.getName() + " is already asigned to evaluation: " + evaluation.getEvaluationName() + ", " + evaluation.getSubject());
+                        }
+
+                        choose2ID = false;
+                    }
+                    else{
+                        System.out.println("There is no evaluation with that ID.");
+                        break;
+                    }
+
+                }catch (InputMismatchException e){
+                    System.out.println("The ID can only have numerical characters");
+                    System.out.print("Enter a new ID: ");
+                    scanner.nextLine(); // Limpiar el buffer
+                }
+            }while(choose2ID);
+        }
+    }
+
+
 
 
 }

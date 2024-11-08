@@ -1,6 +1,6 @@
-package com.university.CLILogic.implementations;
+package com.university.segundaParte.CLILogic.implementations;
 
-import com.university.CLILogic.Entity;
+import com.university.segundaParte.CLILogic.Entity;
 
 public interface CRUDRepository<T extends Entity> {
     /**

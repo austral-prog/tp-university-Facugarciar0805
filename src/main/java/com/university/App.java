@@ -1,5 +1,6 @@
-package com.university.primeraParte;
+package com.university;
 
+import com.university.primeraParte.University;
 import com.university.primeraParte.dataWorker.Processor;
 import com.university.primeraParte.dataWorker.transformers.TransformerStudentApproved;
 import com.university.primeraParte.dataWorker.transformers.TransformerStudentExams;

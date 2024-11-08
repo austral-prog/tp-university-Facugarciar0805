@@ -1,7 +1,7 @@
 Student_Name,Subject_Name,Report
 Alice Azure,Art,Fail
 Alice Azure,Biology,Fail
-Alice Azure,Chemistry,Fail
+Alice Azure,Chemistry,Pass
 Alice Azure,Computer Science,Fail
 Alice Azure,Economics,Pass
 Alice Azure,Geography,Fail
@@ -22,8 +22,8 @@ Alice Beige,Sociology,Fail
 Alice Black,Chemistry,Fail
 Alice Black,Computer Science,Fail
 Alice Black,English,Fail
-Alice Black,Geography,Fail
-Alice Black,History,Pass
+Alice Black,Geography,Pass
+Alice Black,History,Fail
 Alice Black,Mathematics,Fail
 Alice Black,Music,Fail
 Alice Black,Philosophy,Fail
@@ -41,7 +41,7 @@ Alice Blue,Music,Fail
 Alice Blue,Philosophy,Fail
 Alice Blue,Physics,Fail
 Alice Blue,Psychology,Fail
-Alice Blue,Sociology,Pass
+Alice Blue,Sociology,Fail
 Alice Blue,Statistics,Fail
 Alice Brown,Biology,Fail
 Alice Brown,Chemistry,Fail
@@ -100,7 +100,7 @@ Alice Green,English,Pass
 Alice Green,Geography,Fail
 Alice Green,History,Fail
 Alice Green,Music,Pass
-Alice Green,Philosophy,Pass
+Alice Green,Philosophy,Fail
 Alice Green,Physics,Fail
 Alice Green,Psychology,Fail
 Alice Green,Statistics,Fail
@@ -130,7 +130,7 @@ Alice Magenta,History,Fail
 Alice Magenta,Mathematics,Fail
 Alice Magenta,Music,Fail
 Alice Magenta,Physics,Fail
-Alice Magenta,Psychology,Pass
+Alice Magenta,Psychology,Fail
 Alice Magenta,Sociology,Fail
 Alice Magenta,Statistics,Fail
 Alice Orange,Art,Pass
@@ -143,7 +143,7 @@ Alice Orange,History,Fail
 Alice Orange,Music,Fail
 Alice Orange,Philosophy,Fail
 Alice Orange,Physics,Pass
-Alice Orange,Psychology,Fail
+Alice Orange,Psychology,Pass
 Alice Orange,Sociology,Fail
 Alice Pink,Art,Fail
 Alice Pink,Chemistry,Fail
@@ -161,7 +161,7 @@ Alice Purple,Art,Fail
 Alice Purple,Economics,Fail
 Alice Purple,English,Fail
 Alice Purple,History,Pass
-Alice Purple,Mathematics,Fail
+Alice Purple,Mathematics,Pass
 Alice Purple,Music,Fail
 Alice Purple,Philosophy,Fail
 Alice Purple,Physics,Fail
@@ -172,7 +172,7 @@ Alice Red,Chemistry,Fail
 Alice Red,Computer Science,Fail
 Alice Red,English,Fail
 Alice Red,Geography,Fail
-Alice Red,History,Pass
+Alice Red,History,Fail
 Alice Red,Mathematics,Fail
 Alice Red,Music,Fail
 Alice Red,Philosophy,Fail
@@ -184,7 +184,7 @@ Alice Teal,Biology,Fail
 Alice Teal,Chemistry,Fail
 Alice Teal,Computer Science,Fail
 Alice Teal,Economics,Pass
-Alice Teal,English,Fail
+Alice Teal,English,Pass
 Alice Teal,Geography,Fail
 Alice Teal,History,Fail
 Alice Teal,Mathematics,Fail
@@ -192,7 +192,7 @@ Alice Teal,Music,Fail
 Alice Teal,Philosophy,Fail
 Alice Teal,Psychology,Pass
 Alice Teal,Statistics,Fail
-Alice Violet,Art,Fail
+Alice Violet,Art,Pass
 Alice Violet,Chemistry,Fail
 Alice Violet,Computer Science,Fail
 Alice Violet,Economics,Fail
@@ -223,7 +223,7 @@ Alice Yellow,Philosophy,Fail
 Alice Yellow,Psychology,Fail
 Alice Yellow,Sociology,Fail
 Alice Yellow,Statistics,Fail
-Bob Azure,Art,Fail
+Bob Azure,Art,Pass
 Bob Azure,Biology,Fail
 Bob Azure,Chemistry,Fail
 Bob Azure,Computer Science,Fail
@@ -251,9 +251,9 @@ Bob Black,Computer Science,Fail
 Bob Black,English,Fail
 Bob Black,Geography,Fail
 Bob Black,History,Fail
-Bob Black,Mathematics,Fail
+Bob Black,Mathematics,Pass
 Bob Black,Music,Fail
-Bob Black,Philosophy,Pass
+Bob Black,Philosophy,Fail
 Bob Black,Physics,Fail
 Bob Black,Psychology,Fail
 Bob Black,Sociology,Fail
@@ -269,12 +269,12 @@ Bob Blue,Mathematics,Fail
 Bob Blue,Music,Fail
 Bob Blue,Philosophy,Pass
 Bob Blue,Physics,Pass
-Bob Blue,Psychology,Pass
+Bob Blue,Psychology,Fail
 Bob Blue,Sociology,Fail
 Bob Brown,Chemistry,Fail
 Bob Brown,Computer Science,Fail
 Bob Brown,Economics,Pass
-Bob Brown,English,Fail
+Bob Brown,English,Pass
 Bob Brown,Geography,Fail
 Bob Brown,History,Fail
 Bob Brown,Mathematics,Fail
@@ -288,13 +288,13 @@ Bob Cyan,Economics,Fail
 Bob Cyan,English,Fail
 Bob Cyan,Geography,Fail
 Bob Cyan,History,Fail
-Bob Cyan,Psychology,Pass
+Bob Cyan,Psychology,Fail
 Bob Cyan,Sociology,Fail
 Bob Cyan,Statistics,Fail
 Bob Davis,Biology,Fail
 Bob Davis,Chemistry,Fail
 Bob Davis,Computer Science,Fail
-Bob Davis,Economics,Fail
+Bob Davis,Economics,Pass
 Bob Davis,Geography,Fail
 Bob Davis,History,Fail
 Bob Davis,Music,Fail
@@ -360,7 +360,7 @@ Bob Magenta,Philosophy,Fail
 Bob Magenta,Physics,Fail
 Bob Magenta,Psychology,Fail
 Bob Magenta,Statistics,Fail
-Bob Orange,Biology,Fail
+Bob Orange,Biology,Pass
 Bob Orange,Chemistry,Fail
 Bob Orange,Economics,Fail
 Bob Orange,English,Fail
@@ -375,7 +375,7 @@ Bob Pink,Biology,Fail
 Bob Pink,Chemistry,Fail
 Bob Pink,Economics,Fail
 Bob Pink,English,Pass
-Bob Pink,Geography,Fail
+Bob Pink,Geography,Pass
 Bob Pink,History,Fail
 Bob Pink,Philosophy,Fail
 Bob Pink,Physics,Fail
@@ -429,7 +429,7 @@ Bob Violet,Music,Fail
 Bob Violet,Philosophy,Fail
 Bob Violet,Physics,Pass
 Bob Violet,Psychology,Fail
-Bob Violet,Sociology,Pass
+Bob Violet,Sociology,Fail
 Bob White,Art,Fail
 Bob White,Biology,Fail
 Bob White,Chemistry,Fail
@@ -443,7 +443,7 @@ Bob White,Sociology,Pass
 Bob White,Statistics,Fail
 Bob Yellow,Biology,Fail
 Bob Yellow,Computer Science,Fail
-Bob Yellow,Economics,Fail
+Bob Yellow,Economics,Pass
 Bob Yellow,English,Fail
 Bob Yellow,Geography,Fail
 Bob Yellow,History,Fail
@@ -484,7 +484,7 @@ Charlie Black,Philosophy,Fail
 Charlie Black,Physics,Fail
 Charlie Black,Psychology,Pass
 Charlie Black,Statistics,Fail
-Charlie Blue,Chemistry,Pass
+Charlie Blue,Chemistry,Fail
 Charlie Blue,Computer Science,Fail
 Charlie Blue,Economics,Fail
 Charlie Blue,English,Fail
@@ -538,7 +538,7 @@ Charlie Green,Computer Science,Fail
 Charlie Green,English,Pass
 Charlie Green,Mathematics,Fail
 Charlie Green,Music,Fail
-Charlie Green,Philosophy,Pass
+Charlie Green,Philosophy,Fail
 Charlie Green,Physics,Pass
 Charlie Green,Psychology,Fail
 Charlie Green,Statistics,Fail
@@ -549,9 +549,9 @@ Charlie Indigo,Economics,Fail
 Charlie Indigo,English,Fail
 Charlie Indigo,Geography,Fail
 Charlie Indigo,Music,Fail
-Charlie Indigo,Philosophy,Pass
+Charlie Indigo,Philosophy,Fail
 Charlie Indigo,Physics,Fail
-Charlie Indigo,Psychology,Pass
+Charlie Indigo,Psychology,Fail
 Charlie Indigo,Sociology,Fail
 Charlie Johnson,Art,Fail
 Charlie Johnson,Biology,Fail
@@ -573,7 +573,7 @@ Charlie Magenta,Computer Science,Fail
 Charlie Magenta,Economics,Fail
 Charlie Magenta,English,Fail
 Charlie Magenta,History,Fail
-Charlie Magenta,Mathematics,Fail
+Charlie Magenta,Mathematics,Pass
 Charlie Magenta,Music,Fail
 Charlie Magenta,Philosophy,Fail
 Charlie Magenta,Physics,Fail
@@ -595,7 +595,7 @@ Charlie Pink,Chemistry,Fail
 Charlie Pink,Computer Science,Fail
 Charlie Pink,Geography,Fail
 Charlie Pink,Music,Fail
-Charlie Pink,Philosophy,Pass
+Charlie Pink,Philosophy,Fail
 Charlie Pink,Physics,Fail
 Charlie Pink,Sociology,Fail
 Charlie Pink,Statistics,Fail
@@ -608,7 +608,7 @@ Charlie Purple,Mathematics,Fail
 Charlie Purple,Music,Fail
 Charlie Purple,Physics,Fail
 Charlie Purple,Psychology,Fail
-Charlie Purple,Sociology,Pass
+Charlie Purple,Sociology,Fail
 Charlie Red,Art,Fail
 Charlie Red,Chemistry,Fail
 Charlie Red,Computer Science,Fail
@@ -617,7 +617,7 @@ Charlie Red,English,Fail
 Charlie Red,History,Fail
 Charlie Red,Mathematics,Fail
 Charlie Red,Music,Fail
-Charlie Red,Philosophy,Fail
+Charlie Red,Philosophy,Pass
 Charlie Red,Physics,Fail
 Charlie Red,Psychology,Fail
 Charlie Red,Sociology,Pass
@@ -653,7 +653,7 @@ Charlie White,Geography,Fail
 Charlie White,Mathematics,Pass
 Charlie White,Music,Fail
 Charlie White,Physics,Fail
-Charlie White,Sociology,Fail
+Charlie White,Sociology,Pass
 Charlie White,Statistics,Fail
 Charlie Yellow,Art,Fail
 Charlie Yellow,Biology,Fail
@@ -668,7 +668,7 @@ Charlie Yellow,Physics,Fail
 Charlie Yellow,Psychology,Fail
 Charlie Yellow,Statistics,Pass
 Dana Azure,Art,Fail
-Dana Azure,Biology,Fail
+Dana Azure,Biology,Pass
 Dana Azure,Computer Science,Fail
 Dana Azure,Economics,Fail
 Dana Azure,English,Pass
@@ -721,13 +721,13 @@ Dana Cyan,English,Pass
 Dana Cyan,Geography,Fail
 Dana Cyan,Mathematics,Fail
 Dana Cyan,Music,Fail
-Dana Cyan,Philosophy,Pass
+Dana Cyan,Philosophy,Fail
 Dana Cyan,Psychology,Pass
 Dana Cyan,Statistics,Fail
 Dana Davis,Art,Fail
 Dana Davis,Computer Science,Fail
 Dana Davis,Economics,Fail
-Dana Davis,English,Fail
+Dana Davis,English,Pass
 Dana Davis,Geography,Fail
 Dana Davis,Mathematics,Fail
 Dana Davis,Music,Fail
@@ -783,7 +783,7 @@ Dana Magenta,Geography,Fail
 Dana Magenta,Mathematics,Fail
 Dana Magenta,Physics,Fail
 Dana Magenta,Sociology,Fail
-Dana Magenta,Statistics,Fail
+Dana Magenta,Statistics,Pass
 Dana Orange,Art,Fail
 Dana Orange,Biology,Fail
 Dana Orange,Computer Science,Fail
@@ -833,7 +833,7 @@ Dana Violet,Biology,Fail
 Dana Violet,Chemistry,Fail
 Dana Violet,Computer Science,Fail
 Dana Violet,Economics,Fail
-Dana Violet,English,Fail
+Dana Violet,English,Pass
 Dana Violet,Music,Fail
 Dana Violet,Sociology,Fail
 Dana White,Art,Fail
@@ -856,7 +856,7 @@ Dana Yellow,Economics,Fail
 Dana Yellow,Geography,Fail
 Dana Yellow,History,Fail
 Dana Yellow,Mathematics,Fail
-Dana Yellow,Philosophy,Pass
+Dana Yellow,Philosophy,Fail
 Dana Yellow,Sociology,Fail
 Dana Yellow,Statistics,Pass
 Eve Azure,Chemistry,Fail
@@ -928,9 +928,9 @@ Eve Cyan,Sociology,Fail
 Eve Davis,Economics,Fail
 Eve Davis,English,Fail
 Eve Davis,Mathematics,Fail
-Eve Davis,Music,Fail
+Eve Davis,Music,Pass
 Eve Davis,Philosophy,Pass
-Eve Davis,Psychology,Pass
+Eve Davis,Psychology,Fail
 Eve Davis,Statistics,Fail
 Eve Gray,Biology,Fail
 Eve Gray,Chemistry,Fail
@@ -941,7 +941,7 @@ Eve Gray,Physics,Fail
 Eve Gray,Psychology,Fail
 Eve Gray,Sociology,Fail
 Eve Gray,Statistics,Fail
-Eve Green,Biology,Fail
+Eve Green,Biology,Pass
 Eve Green,Chemistry,Pass
 Eve Green,Computer Science,Fail
 Eve Green,English,Fail
@@ -958,8 +958,8 @@ Eve Indigo,English,Fail
 Eve Indigo,Geography,Pass
 Eve Indigo,Music,Fail
 Eve Indigo,Philosophy,Fail
-Eve Indigo,Physics,Pass
-Eve Indigo,Psychology,Pass
+Eve Indigo,Physics,Fail
+Eve Indigo,Psychology,Fail
 Eve Indigo,Statistics,Fail
 Eve Johnson,Biology,Fail
 Eve Johnson,Chemistry,Fail
@@ -972,7 +972,7 @@ Eve Johnson,Mathematics,Fail
 Eve Johnson,Music,Fail
 Eve Johnson,Philosophy,Fail
 Eve Johnson,Physics,Fail
-Eve Johnson,Psychology,Fail
+Eve Johnson,Psychology,Pass
 Eve Johnson,Sociology,Fail
 Eve Johnson,Statistics,Fail
 Eve Magenta,Economics,Fail
@@ -991,7 +991,7 @@ Eve Orange,Geography,Fail
 Eve Orange,History,Fail
 Eve Orange,Mathematics,Pass
 Eve Orange,Music,Fail
-Eve Orange,Philosophy,Pass
+Eve Orange,Philosophy,Fail
 Eve Orange,Physics,Fail
 Eve Orange,Psychology,Fail
 Eve Orange,Sociology,Fail
@@ -1011,7 +1011,7 @@ Eve Purple,Biology,Fail
 Eve Purple,Computer Science,Fail
 Eve Purple,Economics,Fail
 Eve Purple,English,Fail
-Eve Purple,Geography,Fail
+Eve Purple,Geography,Pass
 Eve Purple,Mathematics,Fail
 Eve Purple,Physics,Fail
 Eve Purple,Psychology,Fail
@@ -1057,7 +1057,7 @@ Eve Yellow,Biology,Fail
 Eve Yellow,Chemistry,Fail
 Eve Yellow,Computer Science,Fail
 Eve Yellow,Economics,Fail
-Eve Yellow,English,Fail
+Eve Yellow,English,Pass
 Eve Yellow,History,Pass
 Eve Yellow,Mathematics,Fail
 Eve Yellow,Music,Fail
@@ -1076,7 +1076,7 @@ Frank Azure,Physics,Fail
 Frank Azure,Psychology,Fail
 Frank Azure,Statistics,Fail
 Frank Beige,Art,Fail
-Frank Beige,Biology,Fail
+Frank Beige,Biology,Pass
 Frank Beige,Economics,Pass
 Frank Beige,English,Fail
 Frank Beige,Geography,Pass
@@ -1099,7 +1099,7 @@ Frank Blue,Chemistry,Fail
 Frank Blue,Computer Science,Fail
 Frank Blue,Economics,Fail
 Frank Blue,Geography,Fail
-Frank Blue,History,Fail
+Frank Blue,History,Pass
 Frank Blue,Mathematics,Fail
 Frank Blue,Music,Fail
 Frank Blue,Philosophy,Pass
@@ -1135,13 +1135,13 @@ Frank Davis,Sociology,Fail
 Frank Gray,Art,Fail
 Frank Gray,Biology,Fail
 Frank Gray,Economics,Fail
-Frank Gray,English,Fail
+Frank Gray,English,Pass
 Frank Gray,Geography,Pass
 Frank Gray,History,Fail
 Frank Gray,Mathematics,Fail
 Frank Gray,Physics,Pass
 Frank Gray,Psychology,Fail
-Frank Gray,Sociology,Pass
+Frank Gray,Sociology,Fail
 Frank Green,Art,Fail
 Frank Green,Biology,Fail
 Frank Green,Chemistry,Fail
@@ -1189,7 +1189,7 @@ Frank Orange,Geography,Pass
 Frank Orange,History,Fail
 Frank Orange,Mathematics,Fail
 Frank Orange,Music,Fail
-Frank Orange,Sociology,Pass
+Frank Orange,Sociology,Fail
 Frank Pink,Art,Fail
 Frank Pink,Biology,Fail
 Frank Pink,Chemistry,Pass
@@ -1199,7 +1199,7 @@ Frank Pink,Geography,Pass
 Frank Pink,History,Fail
 Frank Pink,Mathematics,Fail
 Frank Pink,Physics,Fail
-Frank Pink,Psychology,Fail
+Frank Pink,Psychology,Pass
 Frank Pink,Sociology,Fail
 Frank Purple,Art,Fail
 Frank Purple,Biology,Fail
@@ -1210,7 +1210,7 @@ Frank Purple,Music,Fail
 Frank Purple,Physics,Fail
 Frank Purple,Psychology,Fail
 Frank Purple,Sociology,Pass
-Frank Purple,Statistics,Pass
+Frank Purple,Statistics,Fail
 Frank Red,Biology,Fail
 Frank Red,Chemistry,Fail
 Frank Red,English,Fail
@@ -1273,12 +1273,12 @@ Grace Azure,Geography,Fail
 Grace Azure,History,Fail
 Grace Azure,Music,Fail
 Grace Azure,Philosophy,Fail
-Grace Azure,Psychology,Pass
+Grace Azure,Psychology,Fail
 Grace Beige,Art,Fail
-Grace Beige,Biology,Pass
+Grace Beige,Biology,Fail
 Grace Beige,Chemistry,Fail
 Grace Beige,Computer Science,Fail
-Grace Beige,Economics,Fail
+Grace Beige,Economics,Pass
 Grace Beige,English,Fail
 Grace Beige,Geography,Fail
 Grace Beige,History,Fail
@@ -1308,7 +1308,7 @@ Grace Blue,Statistics,Fail
 Grace Brown,Art,Fail
 Grace Brown,Computer Science,Fail
 Grace Brown,English,Fail
-Grace Brown,History,Fail
+Grace Brown,History,Pass
 Grace Brown,Mathematics,Fail
 Grace Brown,Music,Fail
 Grace Brown,Physics,Fail
@@ -1323,7 +1323,7 @@ Grace Cyan,Geography,Fail
 Grace Cyan,History,Fail
 Grace Cyan,Mathematics,Fail
 Grace Cyan,Music,Fail
-Grace Cyan,Philosophy,Fail
+Grace Cyan,Philosophy,Pass
 Grace Cyan,Physics,Fail
 Grace Cyan,Psychology,Fail
 Grace Cyan,Sociology,Fail
@@ -1346,13 +1346,13 @@ Grace Gray,Computer Science,Fail
 Grace Gray,Economics,Fail
 Grace Gray,English,Fail
 Grace Gray,Geography,Pass
-Grace Gray,History,Pass
+Grace Gray,History,Fail
 Grace Gray,Mathematics,Fail
 Grace Gray,Music,Fail
 Grace Gray,Philosophy,Fail
 Grace Gray,Physics,Fail
 Grace Gray,Sociology,Fail
-Grace Gray,Statistics,Fail
+Grace Gray,Statistics,Pass
 Grace Green,Chemistry,Fail
 Grace Green,Computer Science,Fail
 Grace Green,Economics,Fail
@@ -1386,7 +1386,7 @@ Grace Magenta,Biology,Fail
 Grace Magenta,Chemistry,Fail
 Grace Magenta,Computer Science,Fail
 Grace Magenta,Economics,Fail
-Grace Magenta,English,Fail
+Grace Magenta,English,Pass
 Grace Magenta,Geography,Fail
 Grace Magenta,Music,Fail
 Grace Magenta,Philosophy,Fail
@@ -1437,7 +1437,7 @@ Grace Red,Geography,Fail
 Grace Red,History,Fail
 Grace Red,Mathematics,Fail
 Grace Red,Music,Fail
-Grace Red,Philosophy,Fail
+Grace Red,Philosophy,Pass
 Grace Red,Psychology,Fail
 Grace Red,Sociology,Fail
 Grace Red,Statistics,Fail
@@ -1486,7 +1486,7 @@ Grace Yellow,Geography,Fail
 Grace Yellow,History,Fail
 Grace Yellow,Mathematics,Fail
 Grace Yellow,Philosophy,Fail
-Grace Yellow,Physics,Fail
+Grace Yellow,Physics,Pass
 Grace Yellow,Sociology,Fail
 Grace Yellow,Statistics,Fail
 Hank Azure,Chemistry,Fail
@@ -1503,7 +1503,7 @@ Hank Beige,Chemistry,Fail
 Hank Beige,Computer Science,Fail
 Hank Beige,Economics,Pass
 Hank Beige,English,Fail
-Hank Beige,History,Pass
+Hank Beige,History,Fail
 Hank Beige,Mathematics,Fail
 Hank Beige,Music,Fail
 Hank Beige,Philosophy,Fail
@@ -1536,8 +1536,8 @@ Hank Brown,Chemistry,Fail
 Hank Brown,Computer Science,Fail
 Hank Brown,Geography,Fail
 Hank Brown,History,Fail
-Hank Brown,Mathematics,Fail
-Hank Brown,Psychology,Fail
+Hank Brown,Mathematics,Pass
+Hank Brown,Psychology,Pass
 Hank Brown,Sociology,Fail
 Hank Brown,Statistics,Fail
 Hank Cyan,Biology,Fail
@@ -1545,7 +1545,7 @@ Hank Cyan,Computer Science,Fail
 Hank Cyan,Economics,Fail
 Hank Cyan,English,Fail
 Hank Cyan,Geography,Fail
-Hank Cyan,History,Fail
+Hank Cyan,History,Pass
 Hank Cyan,Mathematics,Fail
 Hank Cyan,Music,Fail
 Hank Cyan,Philosophy,Fail
@@ -1589,11 +1589,11 @@ Hank Indigo,Art,Fail
 Hank Indigo,Biology,Fail
 Hank Indigo,Chemistry,Fail
 Hank Indigo,Computer Science,Fail
-Hank Indigo,Economics,Fail
+Hank Indigo,Economics,Pass
 Hank Indigo,English,Fail
 Hank Indigo,Geography,Fail
-Hank Indigo,History,Pass
-Hank Indigo,Music,Fail
+Hank Indigo,History,Fail
+Hank Indigo,Music,Pass
 Hank Indigo,Philosophy,Fail
 Hank Indigo,Physics,Fail
 Hank Johnson,Art,Fail
@@ -1668,7 +1668,7 @@ Hank Violet,Art,Fail
 Hank Violet,Chemistry,Fail
 Hank Violet,Computer Science,Fail
 Hank Violet,Economics,Fail
-Hank Violet,English,Fail
+Hank Violet,English,Pass
 Hank Violet,Geography,Fail
 Hank Violet,Mathematics,Fail
 Hank Violet,Philosophy,Pass
@@ -1703,7 +1703,7 @@ Ivy Azure,Geography,Fail
 Ivy Azure,History,Fail
 Ivy Azure,Mathematics,Fail
 Ivy Azure,Music,Fail
-Ivy Azure,Philosophy,Fail
+Ivy Azure,Philosophy,Pass
 Ivy Azure,Physics,Fail
 Ivy Azure,Psychology,Fail
 Ivy Azure,Sociology,Fail
@@ -1724,7 +1724,7 @@ Ivy Black,English,Pass
 Ivy Black,Geography,Fail
 Ivy Black,Mathematics,Fail
 Ivy Black,Music,Fail
-Ivy Black,Philosophy,Pass
+Ivy Black,Philosophy,Fail
 Ivy Black,Psychology,Fail
 Ivy Black,Sociology,Fail
 Ivy Black,Statistics,Fail
@@ -1749,9 +1749,9 @@ Ivy Brown,History,Fail
 Ivy Brown,Mathematics,Fail
 Ivy Brown,Philosophy,Fail
 Ivy Brown,Physics,Fail
-Ivy Brown,Psychology,Pass
+Ivy Brown,Psychology,Fail
 Ivy Brown,Sociology,Fail
-Ivy Brown,Statistics,Fail
+Ivy Brown,Statistics,Pass
 Ivy Cyan,Art,Fail
 Ivy Cyan,Biology,Fail
 Ivy Cyan,Chemistry,Fail
@@ -1808,8 +1808,8 @@ Ivy Indigo,Biology,Pass
 Ivy Indigo,Chemistry,Fail
 Ivy Indigo,Economics,Fail
 Ivy Indigo,English,Fail
-Ivy Indigo,Geography,Fail
-Ivy Indigo,History,Fail
+Ivy Indigo,Geography,Pass
+Ivy Indigo,History,Pass
 Ivy Indigo,Music,Fail
 Ivy Indigo,Physics,Fail
 Ivy Indigo,Psychology,Fail
@@ -1833,14 +1833,14 @@ Ivy Magenta,Computer Science,Fail
 Ivy Magenta,Economics,Fail
 Ivy Magenta,History,Fail
 Ivy Magenta,Mathematics,Fail
-Ivy Magenta,Philosophy,Pass
+Ivy Magenta,Philosophy,Fail
 Ivy Magenta,Physics,Pass
 Ivy Magenta,Psychology,Fail
 Ivy Magenta,Sociology,Pass
 Ivy Magenta,Statistics,Fail
 Ivy Orange,Art,Fail
 Ivy Orange,Economics,Pass
-Ivy Orange,English,Fail
+Ivy Orange,English,Pass
 Ivy Orange,Mathematics,Fail
 Ivy Orange,Philosophy,Fail
 Ivy Orange,Physics,Fail
@@ -1853,7 +1853,7 @@ Ivy Pink,English,Fail
 Ivy Pink,Geography,Fail
 Ivy Pink,History,Fail
 Ivy Pink,Mathematics,Fail
-Ivy Pink,Philosophy,Fail
+Ivy Pink,Philosophy,Pass
 Ivy Pink,Physics,Fail
 Ivy Pink,Psychology,Fail
 Ivy Pink,Sociology,Fail
@@ -1876,7 +1876,7 @@ Ivy Red,Computer Science,Fail
 Ivy Red,Economics,Fail
 Ivy Red,Geography,Fail
 Ivy Red,History,Fail
-Ivy Red,Music,Fail
+Ivy Red,Music,Pass
 Ivy Red,Philosophy,Pass
 Ivy Red,Physics,Fail
 Ivy Red,Psychology,Fail
@@ -1906,7 +1906,7 @@ Ivy White,English,Fail
 Ivy White,Geography,Fail
 Ivy White,Mathematics,Fail
 Ivy White,Music,Fail
-Ivy White,Philosophy,Fail
+Ivy White,Philosophy,Pass
 Ivy White,Physics,Fail
 Ivy White,Psychology,Fail
 Ivy White,Sociology,Fail
@@ -1930,7 +1930,7 @@ Jack Azure,Geography,Fail
 Jack Azure,History,Fail
 Jack Azure,Mathematics,Fail
 Jack Azure,Music,Fail
-Jack Azure,Philosophy,Fail
+Jack Azure,Philosophy,Pass
 Jack Azure,Physics,Fail
 Jack Azure,Psychology,Fail
 Jack Azure,Sociology,Fail
@@ -1943,7 +1943,7 @@ Jack Beige,English,Pass
 Jack Beige,Geography,Fail
 Jack Beige,History,Fail
 Jack Beige,Music,Fail
-Jack Beige,Physics,Fail
+Jack Beige,Physics,Pass
 Jack Beige,Psychology,Pass
 Jack Beige,Sociology,Fail
 Jack Beige,Statistics,Fail
@@ -1960,10 +1960,10 @@ Jack Blue,Art,Fail
 Jack Blue,Biology,Fail
 Jack Blue,Computer Science,Fail
 Jack Blue,Economics,Fail
-Jack Blue,English,Fail
+Jack Blue,English,Pass
 Jack Blue,Geography,Fail
 Jack Blue,History,Fail
-Jack Blue,Mathematics,Fail
+Jack Blue,Mathematics,Pass
 Jack Blue,Music,Fail
 Jack Blue,Physics,Fail
 Jack Blue,Psychology,Pass
@@ -1980,26 +1980,26 @@ Jack Brown,Physics,Fail
 Jack Brown,Psychology,Fail
 Jack Brown,Sociology,Fail
 Jack Brown,Statistics,Fail
-Jack Cyan,Chemistry,Pass
+Jack Cyan,Chemistry,Fail
 Jack Cyan,English,Pass
 Jack Cyan,Geography,Fail
-Jack Cyan,History,Pass
+Jack Cyan,History,Fail
 Jack Cyan,Mathematics,Fail
 Jack Cyan,Physics,Fail
 Jack Davis,Biology,Fail
 Jack Davis,Chemistry,Fail
 Jack Davis,Computer Science,Fail
-Jack Davis,Economics,Fail
+Jack Davis,Economics,Pass
 Jack Davis,English,Fail
 Jack Davis,History,Pass
 Jack Davis,Mathematics,Fail
 Jack Davis,Music,Fail
 Jack Davis,Psychology,Fail
-Jack Davis,Sociology,Pass
+Jack Davis,Sociology,Fail
 Jack Gray,Art,Fail
 Jack Gray,Biology,Fail
 Jack Gray,Computer Science,Fail
-Jack Gray,Economics,Fail
+Jack Gray,Economics,Pass
 Jack Gray,English,Pass
 Jack Gray,Geography,Fail
 Jack Gray,History,Fail
@@ -2037,7 +2037,7 @@ Jack Johnson,Computer Science,Fail
 Jack Johnson,Economics,Fail
 Jack Johnson,Geography,Fail
 Jack Johnson,Music,Pass
-Jack Johnson,Philosophy,Pass
+Jack Johnson,Philosophy,Fail
 Jack Johnson,Physics,Fail
 Jack Johnson,Statistics,Fail
 Jack Magenta,Art,Fail
@@ -2118,7 +2118,7 @@ Jack White,Art,Fail
 Jack White,Biology,Fail
 Jack White,Chemistry,Fail
 Jack White,Computer Science,Fail
-Jack White,Economics,Pass
+Jack White,Economics,Fail
 Jack White,English,Pass
 Jack White,Geography,Fail
 Jack White,Mathematics,Fail
@@ -2127,18 +2127,18 @@ Jack White,Psychology,Fail
 Jack Yellow,Art,Fail
 Jack Yellow,Chemistry,Fail
 Jack Yellow,Computer Science,Fail
-Jack Yellow,English,Fail
+Jack Yellow,English,Pass
 Jack Yellow,Music,Fail
 Jack Yellow,Physics,Fail
 Jack Yellow,Psychology,Fail
 Jack Yellow,Sociology,Fail
 Jack Yellow,Statistics,Fail
-Kelly Azure,Art,Fail
+Kelly Azure,Art,Pass
 Kelly Azure,Chemistry,Fail
 Kelly Azure,Computer Science,Fail
 Kelly Azure,Economics,Fail
 Kelly Azure,English,Pass
-Kelly Azure,Geography,Fail
+Kelly Azure,Geography,Pass
 Kelly Azure,History,Fail
 Kelly Azure,Music,Fail
 Kelly Azure,Philosophy,Fail
@@ -2182,7 +2182,7 @@ Kelly Brown,Psychology,Fail
 Kelly Brown,Sociology,Fail
 Kelly Brown,Statistics,Pass
 Kelly Cyan,Art,Fail
-Kelly Cyan,Biology,Fail
+Kelly Cyan,Biology,Pass
 Kelly Cyan,Geography,Pass
 Kelly Cyan,History,Fail
 Kelly Cyan,Mathematics,Fail
@@ -2211,7 +2211,7 @@ Kelly Gray,Economics,Fail
 Kelly Gray,Geography,Fail
 Kelly Gray,History,Fail
 Kelly Gray,Mathematics,Fail
-Kelly Gray,Philosophy,Fail
+Kelly Gray,Philosophy,Pass
 Kelly Gray,Physics,Fail
 Kelly Gray,Psychology,Fail
 Kelly Gray,Sociology,Fail
@@ -2222,7 +2222,7 @@ Kelly Green,Chemistry,Fail
 Kelly Green,Economics,Fail
 Kelly Green,English,Fail
 Kelly Green,Geography,Fail
-Kelly Green,History,Pass
+Kelly Green,History,Fail
 Kelly Green,Mathematics,Fail
 Kelly Green,Music,Fail
 Kelly Green,Physics,Fail
@@ -2247,7 +2247,7 @@ Kelly Johnson,Geography,Fail
 Kelly Johnson,History,Fail
 Kelly Johnson,Mathematics,Fail
 Kelly Johnson,Music,Fail
-Kelly Johnson,Philosophy,Pass
+Kelly Johnson,Philosophy,Fail
 Kelly Johnson,Physics,Fail
 Kelly Johnson,Psychology,Fail
 Kelly Johnson,Statistics,Fail
@@ -2295,7 +2295,7 @@ Kelly Purple,English,Fail
 Kelly Purple,Geography,Fail
 Kelly Purple,Mathematics,Fail
 Kelly Purple,Music,Pass
-Kelly Purple,Physics,Fail
+Kelly Purple,Physics,Pass
 Kelly Purple,Psychology,Fail
 Kelly Purple,Statistics,Fail
 Kelly Red,Art,Fail
@@ -2315,7 +2315,7 @@ Kelly Teal,Biology,Fail
 Kelly Teal,Chemistry,Fail
 Kelly Teal,Computer Science,Fail
 Kelly Teal,Economics,Fail
-Kelly Teal,English,Fail
+Kelly Teal,English,Pass
 Kelly Teal,Geography,Fail
 Kelly Teal,History,Fail
 Kelly Teal,Mathematics,Fail
@@ -2329,7 +2329,7 @@ Kelly Violet,Biology,Fail
 Kelly Violet,Chemistry,Fail
 Kelly Violet,Computer Science,Fail
 Kelly Violet,Economics,Fail
-Kelly Violet,English,Fail
+Kelly Violet,English,Pass
 Kelly Violet,Geography,Fail
 Kelly Violet,History,Fail
 Kelly Violet,Music,Pass
@@ -2400,7 +2400,7 @@ Liam Blue,Mathematics,Fail
 Liam Blue,Music,Fail
 Liam Blue,Physics,Fail
 Liam Blue,Psychology,Fail
-Liam Blue,Sociology,Pass
+Liam Blue,Sociology,Fail
 Liam Blue,Statistics,Fail
 Liam Brown,Art,Fail
 Liam Brown,Biology,Fail
@@ -2418,7 +2418,7 @@ Liam Cyan,Biology,Fail
 Liam Cyan,Chemistry,Fail
 Liam Cyan,Computer Science,Fail
 Liam Cyan,Economics,Fail
-Liam Cyan,English,Fail
+Liam Cyan,English,Pass
 Liam Cyan,Geography,Fail
 Liam Cyan,History,Fail
 Liam Cyan,Mathematics,Fail
@@ -2442,9 +2442,9 @@ Liam Gray,English,Pass
 Liam Gray,Geography,Fail
 Liam Gray,History,Fail
 Liam Gray,Mathematics,Fail
-Liam Gray,Philosophy,Fail
+Liam Gray,Philosophy,Pass
 Liam Gray,Sociology,Fail
-Liam Gray,Statistics,Fail
+Liam Gray,Statistics,Pass
 Liam Green,Art,Fail
 Liam Green,Biology,Fail
 Liam Green,Computer Science,Fail
@@ -2456,14 +2456,14 @@ Liam Green,Physics,Fail
 Liam Green,Statistics,Fail
 Liam Indigo,Biology,Pass
 Liam Indigo,Economics,Fail
-Liam Indigo,English,Fail
+Liam Indigo,English,Pass
 Liam Indigo,Geography,Fail
 Liam Indigo,Mathematics,Fail
 Liam Indigo,Philosophy,Fail
 Liam Indigo,Physics,Pass
 Liam Indigo,Psychology,Fail
 Liam Indigo,Sociology,Fail
-Liam Indigo,Statistics,Fail
+Liam Indigo,Statistics,Pass
 Liam Johnson,Art,Pass
 Liam Johnson,Biology,Fail
 Liam Johnson,Economics,Fail
@@ -2472,7 +2472,7 @@ Liam Johnson,Geography,Pass
 Liam Johnson,History,Pass
 Liam Johnson,Mathematics,Fail
 Liam Johnson,Physics,Fail
-Liam Johnson,Statistics,Pass
+Liam Johnson,Statistics,Fail
 Liam Magenta,Biology,Fail
 Liam Magenta,Geography,Pass
 Liam Magenta,History,Fail
@@ -2484,7 +2484,7 @@ Liam Magenta,Sociology,Fail
 Liam Magenta,Statistics,Fail
 Liam Orange,Art,Fail
 Liam Orange,Biology,Fail
-Liam Orange,Chemistry,Fail
+Liam Orange,Chemistry,Pass
 Liam Orange,Computer Science,Fail
 Liam Orange,Economics,Fail
 Liam Orange,English,Fail
@@ -2503,13 +2503,13 @@ Liam Pink,Geography,Fail
 Liam Pink,Mathematics,Pass
 Liam Pink,Music,Fail
 Liam Pink,Physics,Fail
-Liam Pink,Psychology,Fail
+Liam Pink,Psychology,Pass
 Liam Pink,Sociology,Fail
 Liam Pink,Statistics,Fail
 Liam Purple,Chemistry,Fail
 Liam Purple,Computer Science,Fail
 Liam Purple,Economics,Fail
-Liam Purple,English,Fail
+Liam Purple,English,Pass
 Liam Purple,Geography,Fail
 Liam Purple,History,Fail
 Liam Purple,Physics,Fail
@@ -2597,7 +2597,7 @@ Mona Black,Philosophy,Fail
 Mona Black,Physics,Fail
 Mona Black,Psychology,Fail
 Mona Black,Sociology,Fail
-Mona Black,Statistics,Fail
+Mona Black,Statistics,Pass
 Mona Blue,Biology,Fail
 Mona Blue,Chemistry,Fail
 Mona Blue,Computer Science,Fail
@@ -2668,7 +2668,7 @@ Mona Green,Statistics,Fail
 Mona Indigo,Biology,Fail
 Mona Indigo,Computer Science,Fail
 Mona Indigo,Economics,Pass
-Mona Indigo,English,Fail
+Mona Indigo,English,Pass
 Mona Indigo,Geography,Fail
 Mona Indigo,Philosophy,Fail
 Mona Indigo,Psychology,Fail
@@ -2681,7 +2681,7 @@ Mona Johnson,Economics,Fail
 Mona Johnson,English,Fail
 Mona Johnson,Geography,Fail
 Mona Johnson,Mathematics,Fail
-Mona Johnson,Philosophy,Pass
+Mona Johnson,Philosophy,Fail
 Mona Johnson,Physics,Fail
 Mona Johnson,Sociology,Fail
 Mona Johnson,Statistics,Fail
@@ -2711,8 +2711,8 @@ Mona Pink,History,Fail
 Mona Pink,Music,Fail
 Mona Pink,Philosophy,Pass
 Mona Pink,Psychology,Fail
-Mona Pink,Sociology,Pass
-Mona Pink,Statistics,Fail
+Mona Pink,Sociology,Fail
+Mona Pink,Statistics,Pass
 Mona Purple,Art,Fail
 Mona Purple,Chemistry,Fail
 Mona Purple,Computer Science,Fail
@@ -2723,7 +2723,7 @@ Mona Purple,Music,Fail
 Mona Purple,Philosophy,Fail
 Mona Purple,Physics,Fail
 Mona Purple,Psychology,Fail
-Mona Purple,Statistics,Pass
+Mona Purple,Statistics,Fail
 Mona Red,Art,Pass
 Mona Red,Biology,Fail
 Mona Red,Computer Science,Fail
@@ -2745,7 +2745,7 @@ Mona Teal,Music,Fail
 Mona Teal,Philosophy,Fail
 Mona Teal,Physics,Fail
 Mona Teal,Psychology,Fail
-Mona Teal,Sociology,Fail
+Mona Teal,Sociology,Pass
 Mona Violet,Chemistry,Fail
 Mona Violet,Economics,Fail
 Mona Violet,English,Fail
@@ -2756,7 +2756,7 @@ Mona Violet,Music,Fail
 Mona Violet,Philosophy,Fail
 Mona Violet,Psychology,Fail
 Mona Violet,Sociology,Pass
-Mona Violet,Statistics,Fail
+Mona Violet,Statistics,Pass
 Mona White,Art,Fail
 Mona White,Biology,Fail
 Mona White,Geography,Fail
@@ -2765,16 +2765,16 @@ Mona White,Mathematics,Fail
 Mona White,Physics,Fail
 Mona White,Psychology,Fail
 Mona White,Sociology,Fail
-Mona Yellow,Art,Fail
+Mona Yellow,Art,Pass
 Mona Yellow,Biology,Fail
 Mona Yellow,Chemistry,Fail
 Mona Yellow,Economics,Fail
-Mona Yellow,English,Fail
+Mona Yellow,English,Pass
 Mona Yellow,Geography,Fail
 Mona Yellow,History,Fail
 Mona Yellow,Mathematics,Fail
 Mona Yellow,Music,Fail
-Mona Yellow,Philosophy,Pass
+Mona Yellow,Philosophy,Fail
 Mona Yellow,Physics,Fail
 Mona Yellow,Psychology,Fail
 Mona Yellow,Statistics,Fail
@@ -2846,16 +2846,16 @@ Nick Davis,Computer Science,Fail
 Nick Davis,Economics,Fail
 Nick Davis,History,Pass
 Nick Davis,Music,Fail
-Nick Davis,Philosophy,Fail
+Nick Davis,Philosophy,Pass
 Nick Davis,Physics,Fail
-Nick Davis,Psychology,Pass
+Nick Davis,Psychology,Fail
 Nick Gray,Art,Fail
 Nick Gray,Biology,Pass
 Nick Gray,Chemistry,Fail
 Nick Gray,Computer Science,Fail
 Nick Gray,Philosophy,Fail
 Nick Gray,Physics,Pass
-Nick Gray,Sociology,Pass
+Nick Gray,Sociology,Fail
 Nick Green,Biology,Fail
 Nick Green,Chemistry,Pass
 Nick Green,English,Pass
@@ -2938,7 +2938,7 @@ Nick Red,Geography,Pass
 Nick Red,History,Fail
 Nick Red,Mathematics,Fail
 Nick Red,Music,Fail
-Nick Red,Philosophy,Fail
+Nick Red,Philosophy,Pass
 Nick Red,Psychology,Fail
 Nick Red,Statistics,Fail
 Nick Teal,Art,Fail
@@ -2981,7 +2981,7 @@ Nick Yellow,Geography,Fail
 Nick Yellow,History,Fail
 Nick Yellow,Mathematics,Fail
 Nick Yellow,Music,Pass
-Nick Yellow,Philosophy,Fail
+Nick Yellow,Philosophy,Pass
 Nick Yellow,Physics,Fail
 Nick Yellow,Statistics,Fail
 Olivia Azure,Biology,Fail
@@ -2995,7 +2995,7 @@ Olivia Azure,Music,Fail
 Olivia Azure,Philosophy,Fail
 Olivia Azure,Physics,Fail
 Olivia Azure,Psychology,Pass
-Olivia Azure,Sociology,Fail
+Olivia Azure,Sociology,Pass
 Olivia Beige,Biology,Fail
 Olivia Beige,Chemistry,Fail
 Olivia Beige,Computer Science,Fail
@@ -3042,11 +3042,11 @@ Olivia Cyan,Art,Fail
 Olivia Cyan,Biology,Pass
 Olivia Cyan,Chemistry,Fail
 Olivia Cyan,Computer Science,Fail
-Olivia Cyan,English,Fail
+Olivia Cyan,English,Pass
 Olivia Cyan,Geography,Fail
 Olivia Cyan,Mathematics,Fail
 Olivia Cyan,Philosophy,Fail
-Olivia Cyan,Sociology,Pass
+Olivia Cyan,Sociology,Fail
 Olivia Cyan,Statistics,Fail
 Olivia Davis,Biology,Fail
 Olivia Davis,Chemistry,Fail
@@ -3054,7 +3054,7 @@ Olivia Davis,Computer Science,Fail
 Olivia Davis,Economics,Fail
 Olivia Davis,English,Fail
 Olivia Davis,Geography,Fail
-Olivia Davis,History,Pass
+Olivia Davis,History,Fail
 Olivia Davis,Mathematics,Fail
 Olivia Davis,Music,Fail
 Olivia Davis,Philosophy,Fail
@@ -3101,7 +3101,7 @@ Olivia Johnson,Geography,Pass
 Olivia Johnson,Mathematics,Fail
 Olivia Johnson,Music,Fail
 Olivia Johnson,Philosophy,Fail
-Olivia Johnson,Psychology,Pass
+Olivia Johnson,Psychology,Fail
 Olivia Johnson,Sociology,Fail
 Olivia Johnson,Statistics,Fail
 Olivia Magenta,Biology,Pass
@@ -3121,7 +3121,7 @@ Olivia Orange,Art,Fail
 Olivia Orange,Biology,Fail
 Olivia Orange,Chemistry,Pass
 Olivia Orange,Computer Science,Fail
-Olivia Orange,English,Fail
+Olivia Orange,English,Pass
 Olivia Orange,Geography,Fail
 Olivia Orange,History,Fail
 Olivia Orange,Mathematics,Fail
@@ -3137,7 +3137,7 @@ Olivia Pink,Computer Science,Fail
 Olivia Pink,Economics,Fail
 Olivia Pink,Geography,Fail
 Olivia Pink,History,Fail
-Olivia Pink,Mathematics,Pass
+Olivia Pink,Mathematics,Fail
 Olivia Pink,Music,Fail
 Olivia Pink,Physics,Fail
 Olivia Pink,Psychology,Fail
@@ -3148,7 +3148,7 @@ Olivia Purple,Geography,Pass
 Olivia Purple,Mathematics,Fail
 Olivia Purple,Music,Fail
 Olivia Purple,Physics,Fail
-Olivia Purple,Psychology,Fail
+Olivia Purple,Psychology,Pass
 Olivia Purple,Sociology,Fail
 Olivia Red,Biology,Fail
 Olivia Red,Chemistry,Fail
@@ -3167,7 +3167,7 @@ Olivia Teal,Biology,Fail
 Olivia Teal,Computer Science,Fail
 Olivia Teal,Economics,Fail
 Olivia Teal,English,Pass
-Olivia Teal,History,Pass
+Olivia Teal,History,Fail
 Olivia Teal,Music,Fail
 Olivia Teal,Philosophy,Fail
 Olivia Teal,Physics,Pass
@@ -3178,7 +3178,7 @@ Olivia Violet,Chemistry,Fail
 Olivia Violet,Computer Science,Fail
 Olivia Violet,Economics,Fail
 Olivia Violet,Geography,Fail
-Olivia Violet,History,Pass
+Olivia Violet,History,Fail
 Olivia Violet,Music,Pass
 Olivia Violet,Physics,Fail
 Olivia Violet,Psychology,Fail
@@ -3189,7 +3189,7 @@ Olivia White,Biology,Fail
 Olivia White,Computer Science,Fail
 Olivia White,Economics,Fail
 Olivia White,English,Fail
-Olivia White,History,Pass
+Olivia White,History,Fail
 Olivia White,Music,Fail
 Olivia White,Philosophy,Fail
 Olivia White,Physics,Fail
@@ -3206,7 +3206,7 @@ Olivia Yellow,Music,Fail
 Olivia Yellow,Philosophy,Fail
 Olivia Yellow,Physics,Fail
 Olivia Yellow,Psychology,Fail
-Olivia Yellow,Sociology,Pass
+Olivia Yellow,Sociology,Fail
 Olivia Yellow,Statistics,Fail
 Paul Azure,Art,Fail
 Paul Azure,Biology,Fail
@@ -3214,19 +3214,19 @@ Paul Azure,Chemistry,Fail
 Paul Azure,Computer Science,Fail
 Paul Azure,English,Fail
 Paul Azure,Geography,Fail
-Paul Azure,History,Fail
+Paul Azure,History,Pass
 Paul Azure,Mathematics,Pass
 Paul Azure,Music,Fail
 Paul Azure,Philosophy,Fail
 Paul Azure,Psychology,Fail
-Paul Azure,Sociology,Pass
-Paul Beige,Art,Fail
+Paul Azure,Sociology,Fail
+Paul Beige,Art,Pass
 Paul Beige,Biology,Fail
 Paul Beige,Chemistry,Fail
 Paul Beige,Computer Science,Fail
 Paul Beige,Economics,Fail
 Paul Beige,English,Fail
-Paul Beige,History,Pass
+Paul Beige,History,Fail
 Paul Beige,Mathematics,Fail
 Paul Beige,Philosophy,Fail
 Paul Beige,Statistics,Pass
@@ -3253,7 +3253,7 @@ Paul Blue,History,Pass
 Paul Blue,Mathematics,Fail
 Paul Blue,Music,Fail
 Paul Blue,Physics,Pass
-Paul Blue,Psychology,Pass
+Paul Blue,Psychology,Fail
 Paul Blue,Sociology,Fail
 Paul Brown,Art,Fail
 Paul Brown,Biology,Fail
@@ -3419,7 +3419,7 @@ Paul White,Economics,Fail
 Paul White,Mathematics,Fail
 Paul White,Music,Fail
 Paul White,Philosophy,Fail
-Paul White,Psychology,Pass
+Paul White,Psychology,Fail
 Paul White,Sociology,Fail
 Paul White,Statistics,Fail
 Paul Yellow,Art,Fail
@@ -3468,14 +3468,14 @@ Quincy Blue,Computer Science,Fail
 Quincy Blue,Economics,Fail
 Quincy Blue,History,Fail
 Quincy Blue,Mathematics,Fail
-Quincy Blue,Philosophy,Fail
+Quincy Blue,Philosophy,Pass
 Quincy Blue,Psychology,Fail
 Quincy Blue,Sociology,Fail
 Quincy Blue,Statistics,Fail
 Quincy Brown,Art,Fail
 Quincy Brown,Chemistry,Fail
 Quincy Brown,Computer Science,Fail
-Quincy Brown,Economics,Pass
+Quincy Brown,Economics,Fail
 Quincy Brown,English,Fail
 Quincy Brown,Geography,Fail
 Quincy Brown,History,Fail
@@ -3498,7 +3498,7 @@ Quincy Cyan,Statistics,Fail
 Quincy Davis,Art,Fail
 Quincy Davis,Computer Science,Fail
 Quincy Davis,Geography,Fail
-Quincy Davis,History,Fail
+Quincy Davis,History,Pass
 Quincy Davis,Mathematics,Fail
 Quincy Davis,Music,Fail
 Quincy Davis,Philosophy,Fail
@@ -3509,7 +3509,7 @@ Quincy Gray,Biology,Fail
 Quincy Gray,Chemistry,Pass
 Quincy Gray,Computer Science,Fail
 Quincy Gray,Economics,Fail
-Quincy Gray,English,Fail
+Quincy Gray,English,Pass
 Quincy Gray,Geography,Pass
 Quincy Gray,Music,Fail
 Quincy Gray,Philosophy,Fail
@@ -3554,7 +3554,7 @@ Quincy Magenta,Art,Fail
 Quincy Magenta,Biology,Fail
 Quincy Magenta,Computer Science,Fail
 Quincy Magenta,English,Fail
-Quincy Magenta,Geography,Fail
+Quincy Magenta,Geography,Pass
 Quincy Magenta,History,Pass
 Quincy Magenta,Mathematics,Fail
 Quincy Magenta,Music,Fail
@@ -3563,10 +3563,10 @@ Quincy Magenta,Physics,Fail
 Quincy Magenta,Psychology,Fail
 Quincy Magenta,Sociology,Fail
 Quincy Magenta,Statistics,Fail
-Quincy Orange,Art,Fail
+Quincy Orange,Art,Pass
 Quincy Orange,Biology,Fail
 Quincy Orange,Computer Science,Fail
-Quincy Orange,Economics,Pass
+Quincy Orange,Economics,Fail
 Quincy Orange,English,Fail
 Quincy Orange,Geography,Pass
 Quincy Orange,History,Pass
@@ -3579,7 +3579,7 @@ Quincy Pink,Art,Fail
 Quincy Pink,Biology,Fail
 Quincy Pink,Computer Science,Fail
 Quincy Pink,Economics,Fail
-Quincy Pink,English,Fail
+Quincy Pink,English,Pass
 Quincy Pink,Geography,Fail
 Quincy Pink,Mathematics,Fail
 Quincy Pink,Music,Fail
@@ -3654,7 +3654,7 @@ Quincy Yellow,History,Fail
 Quincy Yellow,Mathematics,Fail
 Quincy Yellow,Physics,Fail
 Quincy Yellow,Psychology,Fail
-Quincy Yellow,Sociology,Fail
+Quincy Yellow,Sociology,Pass
 Quincy Yellow,Statistics,Fail
 Rita Azure,Biology,Fail
 Rita Azure,Chemistry,Pass
@@ -3664,11 +3664,11 @@ Rita Azure,Geography,Fail
 Rita Azure,History,Fail
 Rita Azure,Mathematics,Fail
 Rita Azure,Physics,Fail
-Rita Azure,Psychology,Pass
+Rita Azure,Psychology,Fail
 Rita Azure,Sociology,Fail
 Rita Beige,Chemistry,Fail
 Rita Beige,Computer Science,Fail
-Rita Beige,Economics,Pass
+Rita Beige,Economics,Fail
 Rita Beige,English,Pass
 Rita Beige,History,Fail
 Rita Beige,Music,Fail
@@ -3693,7 +3693,7 @@ Rita Blue,Biology,Fail
 Rita Blue,Chemistry,Fail
 Rita Blue,Computer Science,Fail
 Rita Blue,Geography,Fail
-Rita Blue,History,Fail
+Rita Blue,History,Pass
 Rita Blue,Mathematics,Fail
 Rita Blue,Music,Fail
 Rita Blue,Physics,Fail
@@ -3757,7 +3757,7 @@ Rita Indigo,English,Pass
 Rita Indigo,Geography,Fail
 Rita Indigo,Mathematics,Fail
 Rita Indigo,Music,Fail
-Rita Indigo,Psychology,Pass
+Rita Indigo,Psychology,Fail
 Rita Indigo,Sociology,Fail
 Rita Indigo,Statistics,Fail
 Rita Johnson,Art,Fail
@@ -3806,7 +3806,7 @@ Rita Pink,Philosophy,Fail
 Rita Pink,Physics,Fail
 Rita Pink,Sociology,Fail
 Rita Pink,Statistics,Fail
-Rita Purple,Chemistry,Pass
+Rita Purple,Chemistry,Fail
 Rita Purple,Economics,Fail
 Rita Purple,Mathematics,Fail
 Rita Purple,Music,Fail
@@ -3833,7 +3833,7 @@ Rita Teal,Computer Science,Fail
 Rita Teal,Economics,Fail
 Rita Teal,English,Pass
 Rita Teal,Geography,Fail
-Rita Teal,History,Fail
+Rita Teal,History,Pass
 Rita Teal,Mathematics,Fail
 Rita Teal,Music,Fail
 Rita Teal,Philosophy,Fail
@@ -3848,7 +3848,7 @@ Rita Violet,Geography,Fail
 Rita Violet,Mathematics,Fail
 Rita Violet,Music,Fail
 Rita Violet,Physics,Fail
-Rita Violet,Psychology,Pass
+Rita Violet,Psychology,Fail
 Rita Violet,Sociology,Fail
 Rita Violet,Statistics,Fail
 Rita White,Chemistry,Fail
@@ -3868,9 +3868,9 @@ Rita Yellow,English,Fail
 Rita Yellow,Geography,Fail
 Rita Yellow,History,Fail
 Rita Yellow,Mathematics,Fail
-Rita Yellow,Music,Fail
+Rita Yellow,Music,Pass
 Rita Yellow,Philosophy,Fail
-Rita Yellow,Sociology,Pass
+Rita Yellow,Sociology,Fail
 Sam Azure,Art,Fail
 Sam Azure,Biology,Fail
 Sam Azure,Economics,Fail
@@ -3935,7 +3935,7 @@ Sam Cyan,Music,Fail
 Sam Cyan,Philosophy,Fail
 Sam Cyan,Physics,Fail
 Sam Cyan,Psychology,Fail
-Sam Cyan,Sociology,Fail
+Sam Cyan,Sociology,Pass
 Sam Cyan,Statistics,Fail
 Sam Davis,Art,Fail
 Sam Davis,Biology,Fail
@@ -3960,7 +3960,7 @@ Sam Gray,Philosophy,Fail
 Sam Gray,Physics,Fail
 Sam Green,Computer Science,Fail
 Sam Green,Economics,Fail
-Sam Green,English,Fail
+Sam Green,English,Pass
 Sam Green,Mathematics,Fail
 Sam Green,Music,Fail
 Sam Green,Psychology,Fail
@@ -3973,7 +3973,7 @@ Sam Indigo,Geography,Fail
 Sam Indigo,History,Fail
 Sam Indigo,Music,Fail
 Sam Indigo,Philosophy,Fail
-Sam Indigo,Statistics,Fail
+Sam Indigo,Statistics,Pass
 Sam Johnson,Art,Fail
 Sam Johnson,Chemistry,Fail
 Sam Johnson,Computer Science,Fail
@@ -4067,10 +4067,10 @@ Sam White,Computer Science,Fail
 Sam White,Economics,Fail
 Sam White,English,Pass
 Sam White,Geography,Fail
-Sam White,History,Pass
+Sam White,History,Fail
 Sam White,Mathematics,Fail
 Sam White,Music,Fail
-Sam White,Philosophy,Pass
+Sam White,Philosophy,Fail
 Sam White,Physics,Pass
 Sam White,Psychology,Pass
 Sam White,Statistics,Fail
